@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NephroCall - Supervision Critique Dialyse | Safefull Systems</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Specific overrides for NephroCall Clinical Aesthetic */
+        .clinical-hero {
+            background: linear-gradient(180deg, #020617 0%, #0B1120 100%);
+        }
+
+        .metric-card-clinical {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .compatibility-grid {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .partner-logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #64748B;
+            border: 1px solid #1E293B;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="shield-check"></i>
+                Safefull Systems
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="#">Industries</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Ressources</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-secondary">Contact</a>
+                <a href="#" class="btn btn-primary">Espace Client</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Clinical) -->
+    <header class="hero clinical-hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"
+                        style="background-color: var(--color-primary); box-shadow: 0 0 8px var(--color-primary);"></span>
+                    Supervision Santé
+                </div>
+                <h1>NephroCall : La Supervision Critique pour <span class="text-gradient">Centres de Dialyse.</span>
+                </h1>
+                <p class="hero-description">
+                    Centralisez les alarmes techniques (Traitement d'eau, Générateurs) et garantissez la continuité des
+                    soins. Fiabilité absolue pour environnements vitaux.
+                </p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary">
+                        Audit de votre architecture
+                        <i data-lucide="activity"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-card-wrapper" style="max-width: 600px;">
+                    <img src="./assets/nephrocall_interface.png" alt="NephroCall Clinical Interface" class="hero-image"
+                        style="mix-blend-mode: normal; box-shadow: 0 20px 40px rgba(0,0,0,0.5); border: 1px solid #334155;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Architecture Section -->
+    <section class="solutions-section" style="background-color: #0F172A; padding-top: 4rem;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Architecture Technique</h2>
+                <p>Concept de Supervision Hétérogène Unifiée pour une intégration totale.</p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="icon-box">
+                        <i data-lucide="layers"></i>
+                    </div>
+                    <h3>Intégration Totale</h3>
+                    <p>Récupération des données de <strong>TOUT</strong> le matériel, indépendamment de la marque
+                        (Traitements d'eau, Générateurs, Incendie, CTA).</p>
+                </div>
+                <div class="solution-card">
+                    <div class="icon-box">
+                        <i data-lucide="merge"></i>
+                    </div>
+                    <h3>Protocoles</h3>
+                    <p>Prise en charge native des standards industriels et santé :<br> <span
+                            style="color: var(--color-primary);">Contacts secs, IP, Modbus, Espa 4.4.4</span>.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="icon-box">
+                        <i data-lucide="network"></i>
+                    </div>
+                    <h3>Hypervision</h3>
+                    <p>Une vue unique pour piloter l'ensemble de vos installations techniques critiques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biomedical Benefits -->
+    <section style="padding: 6rem 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Bénéfices Biomédicaux</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <div class="metric-card-clinical">
+                    <i data-lucide="heart-handshake"
+                        style="width: 40px; height: 40px; color: var(--color-success); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem;">Sérénité des Soignants</h3>
+                    <p style="color: var(--color-text-muted);">
+                        L'alarme est acheminée <strong>directement</strong> et sans délai sur le DECT ou le Smartphone
+                        de l'infirmière ou du technicien d'astreinte. Réponse immédiate garantie.
+                    </p>
+                </div>
+                <div class="metric-card-clinical">
+                    <i data-lucide="clipboard-check"
+                        style="width: 40px; height: 40px; color: var(--color-primary); margin-bottom: 1rem;"></i>
+                    <h3 style="margin-bottom: 0.5rem;">Traçabilité Complète</h3>
+                    <p style="color: var(--color-text-muted);">
+                        Historisation précise et infalsifiable de tous les incidents techniques et des temps de réponse
+                        pour vos <strong>audits de certification santé</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compatibility -->
+    <section style="padding: 4rem 0; border-top: 1px solid var(--color-border); background-color: #020617;">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 2rem;">
+                <h3 style="font-size: 1.5rem; color: var(--color-text-muted);">Compatibilité Écosystème</h3>
+            </div>
+            <div class="compatibility-grid">
+                <span class="partner-logo">FRESENIUS</span>
+                <span class="partner-logo">GAMBRO</span>
+                <span class="partner-logo">B.BRAUN</span>
+                <span class="partner-logo">BAXTER</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section
+        style="padding: 6rem 0; text-align: center; background: linear-gradient(180deg, #020617 0%, #0f172a 100%);">
+        <div class="container">
+            <h2 style="margin-bottom: 2rem;">Sécurisez votre centre de dialyse dès aujourd'hui</h2>
+            <a href="#" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.1rem;">
+                Demander un audit de votre architecture
+                <i data-lucide="arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer
+        style="background-color: #020617; border-top: 1px solid var(--color-border); padding: 4rem 0; margin-top: auto;">
+        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+            <div style="flex: 1; min-width: 200px;">
+                <div class="logo" style="margin-bottom: 1rem;">
+                    <i data-lucide="shield-check" style="color: var(--color-primary);"></i>
+                    Safefull Systems
+                </div>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">
+                    Solutions de sécurité électronique et logicielle pour infrastructures critiques depuis 15 ans.
+                </p>
+            </div>
+            <div style="flex: 0 0 auto; display: flex; gap: 3rem;">
+                <div>
+                    <h4 style="color: white; font-weight: 600; margin-bottom: 1rem;">Solutions</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem;">
+                        <li><a href="mobeeweb.html" style="text-decoration: none; color: inherit;">MobeeWeb (PTI)</a>
+                        </li>
+                        <li><a href="nephrocall.html" style="text-decoration: none; color: inherit;">NephroCall
+                                (Santé)</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Intégration</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="color: white; font-weight: 600; margin-bottom: 1rem;">Société</h4>
+                    <ul
+                        style="display: flex; flex-direction: column; gap: 0.5rem; color: var(--color-text-muted); font-size: 0.9rem;">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">À propos</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Carrières</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container"
+            style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; color: #475569; font-size: 0.85rem;">
+            © 2024 Safefull Systems. Tous droits réservés. <a href="#"
+                style="text-decoration: none; color: inherit; margin-left: 1rem;">Mentions Légales</a>
+        </div>
+    </footer>
+    lucide.createIcons();
+    </script>
+</body>
+
+</html>

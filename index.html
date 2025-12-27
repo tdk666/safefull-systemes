@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safefull Systems - Supervision & Sécurité Critique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-lucide="shield-check"></i>
+                Safefull Systems
+            </a>
+            <ul class="nav-links">
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#">Industries</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Ressources</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-secondary">Contact</a>
+                <a href="#" class="btn btn-primary">Espace Client</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    15 ans d'expertise
+                </div>
+                <h1>La Supervision Intelligente pour vos Équipes et vos <span class="text-gradient">Installations
+                        Critiques.</span></h1>
+                <p class="hero-description">
+                    Nous sécurisons les environnements complexes. De la protection du travailleur isolé (PTI) à la
+                    supervision technique hospitalière, nos solutions garantissent la continuité de vos opérations.
+                </p>
+                <div class="hero-actions">
+                    <a href="#solutions" class="btn btn-primary">
+                        Découvrir nos solutions
+                        <i data-lucide="arrow-down"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i data-lucide="file-text"></i>
+                        Études de cas
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-card-wrapper">
+                    <img src="./assets/hero_mockup_v3.png" alt="Interface Safefull sur smartphone" class="hero-image">
+
+                    <div class="ui-card card-status">
+                        <div class="card-header">
+                            <i data-lucide="activity" class="text-accent"></i>
+                            <span>Supervision</span>
+                        </div>
+                        <div class="status-indicator">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar active"></div>
+                        </div>
+                        <span class="status-text">Opérationnel</span>
+                    </div>
+
+                    <div class="ui-card card-alert">
+                        <div class="card-header">
+                            <i data-lucide="shield-alert" class="text-alert"></i>
+                            <span>Alerte PTI</span>
+                        </div>
+                        <p class="alert-desc">Chute détectée - Zone 2</p>
+                        <span class="alert-time">Traitement en cours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-grid"></div>
+        <div class="bg-glow"></div>
+    </header>
+
+    <section id="social-proof" class="social-proof">
+        <div class="container">
+            <p class="social-text">Des solutions éprouvées par les grands comptes de l'industrie et de la santé</p>
+            <div class="logo-grid">
+                <span class="client-logo">AIR FRANCE</span>
+                <span class="client-logo">CEA</span>
+                <span class="client-logo">NESTLÉ</span>
+                <span class="client-logo">AP-HP</span>
+                <span class="client-logo">SANOFI</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="solutions-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Solutions</h2>
+                <p>Technologies propriétaires et intégrations sur-mesure pour environnements critiques.</p>
+            </div>
+
+            <div class="solutions-grid">
+                <!-- Bloc A: MobeeWeb -->
+                <div class="solution-card">
+                    <div class="icon-box">
+                        <i data-lucide="smartphone"></i>
+                    </div>
+                    <h3><a href="mobeeweb.html" style="text-decoration: none; color: inherit;">MobeeWeb</a> <span
+                            class="card-subtitle">PTI Avancé</span></h3>
+                    <p>Protection du Travailleur Isolé nouvelle génération. Application mobile et dispositifs dédiés.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check"></i> Géolocalisation Indoor/Outdoor</li>
+                        <li><i data-lucide="check"></i> Détection perte de verticalité</li>
+                        <li><i data-lucide="check"></i> Gestion de crise centralisée</li>
+                    </ul>
+                </div>
+
+                <!-- Bloc B: NephroCall -->
+                <div class="solution-card">
+                    <div class="icon-box">
+                        <i data-lucide="heart-pulse"></i>
+                    </div>
+                    <h3>NephroCall <span class="card-subtitle">Supervision Santé</span></h3>
+                    <p>La référence pour la sécurité des services de dialyse et la continuité des soins.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check"></i> Remontée d'alarmes machines</li>
+                        <li><i data-lucide="check"></i> Dossier patient informatisé</li>
+                        <li><i data-lucide="check"></i> Interopérabilité technique HL7</li>
+                    </ul>
+                </div>
+
+                <!-- Bloc C: Intégration -->
+                <div class="solution-card">
+                    <div class="icon-box">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3>Intégration <span class="card-subtitle">Sur-Mesure</span></h3>
+                    <p>Architecture de sécurité unifiée pour sites industriels complexes.</p>
+                    <ul class="feature-list">
+                        <li><i data-lucide="check"></i> Protocoles hétérogènes (Modbus, MQTT)</li>
+                        <li><i data-lucide="check"></i> Réseaux IoT & Radio</li>
+                        <li><i data-lucide="check"></i> Hypervision multi-sites</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

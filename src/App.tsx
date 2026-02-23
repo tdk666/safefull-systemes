@@ -1,0 +1,30 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
+import { Home } from './pages/Home';
+import { MobeeWeb } from './pages/solutions/MobeeWeb';
+import { NephroCall } from './pages/solutions/NephroCall';
+import { Sante } from './pages/secteurs/Sante';
+import { Industrie } from './pages/secteurs/Industrie';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="flex min-h-screen flex-col bg-deep-dark text-white font-sans selection:bg-neon-blue selection:text-deep-dark">
+        <Navbar />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/solutions/mobeeweb" element={<MobeeWeb />} />
+            <Route path="/solutions/nephrocall" element={<NephroCall />} />
+            <Route path="/secteurs/sante" element={<Sante />} />
+            <Route path="/secteurs/industrie" element={<Industrie />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;

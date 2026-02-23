@@ -1,0 +1,819 @@
+
+
+--- Fiche_Solution_Safebell_Enterprise.pdf ---
+ 
+     1 
+FICHE SOLUTION
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Leader de la sécurité 
+    communicante 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Rev 042006 A 
+ 
+
+ 
+     
+     
+  2 
+ 
+ 
+ 
+ 
+ 
+SAFEBELL MANAGER  
+ 
+ 
+ 
+SAFEBELL MANAGER  est une Solution "Clef en main" de diffusion d’informations de 
+toute nature, fonctionnant sur l'infrastructure téléphonique et réseau de l'entreprise. 
+ 
+SAFEBELL MANAGER permet d'automatiser la diffusion de messages relatifs à tous types 
+d'alarmes et ceci au profit d'utilisateurs mobiles de tout secteur d'activité 
+ 
+ª Les alarmes de type Protection du Travailleur Isolé 
+ 
+ª Les alarmes techniques  ( Appels malades, Centrales de détection 
+d'incendies, Gestion de contacts secs ou analogiques, GTC, GTB, Intrusion..) 
+ 
+La plate-forme SAFEBELL MANAGER comporte un grand nombre de caractéristiques 
+puissantes telles que : 
+ 
+ L'acquisition quasi illimitée de nombreuses sources d'alarmes comme par 
+exemple les appels malades dans le secteu r Santé, les alarmes issues de GTC ou 
+GTB dans le monde des services,  
+ 
+ La Protection du Travailleur Isolé dans le secteur Industriel , 
+ 
+ Basée sur une interface graphique, la gestion intelligente de la diffusion des 
+alarmes auprès des utilisateurs sur site ou non, exploite des scénarii 
+entièrement paramétrables, 
+ 
+ Un historique de tous les événements  gérés, consultables via un requêteur 
+intégré, 
+ 
+ Une adéquation aux spécif icités de gestion des process gérés au sein de 
+l'entreprise, 
+ 
+ Un sécurisation des accès selon les droits acquis par tel ou tel utilisateur, 
+exploitant, administrateur, 
+ 
+ Un audit permanent du bon fonctionnement de l'infrastructure, 
+ 
+ Un support technique constructeur et une  gestion par télémaintenance afin de 
+garantir la meilleure disponibilité de service. 
+ 
+ 
+ 
+ 
+            3 
+Schéma typique d’architecture  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+     4 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fonctionnalités 
+ 
+SAFEBELL MANAGER intègre un vaste dispositif de possibilités 
+ 
+ 
+Au sein du serveur même 
+ 
+ Le management d'informations issues de tout type de centrales sous interface 
+série, Ethernet TCP/IP ( appels malades, détection incendie, intrusion, contacts 
+secs ou analogiques, GTC, GTB....) 
+ 
+ La capacité à émettre/recevoir des messages au profit de mobiles WIFI 
+ 
+ La capacité à émettre/recevoir des messages au profit de mobiles DECT 
+ 
+ La capacité à émettre/recevoir des messages au profit de mobiles GSM 
+ 
+ La capacité à émettre/recevoir des messages au profit de dispositifs radio 
+ 
+ La capacité à émettre/recevoir des messages au profit de PC, PDA 
+ 
+ L'automatisation de messages vocaux sur ligne interne ou non 
+ 
+ L'acquittement, la réitération , l'escalade ou l'arrêt de processus de diffusion de 
+messages 
+ 
+ La gestion entièrement graphique des scénarii d'acquisition diffusion 
+ 
+ La représentation cartographique et vidéo des alarmes émises 
+ 
+ La possibilité pour l'utilisateur de consulter l'historique d'activité 
+ 
+ 
+ 
+Au niveau de la gestion des mobiles WiFi 
+ 
+ La possibilité d'envoyer/recevoir/historiser des messages 
+ 
+ Pouvoir procéder à la télécommande de process par l'intermédiaire de touches 
+programmables 
+ 
+ Disposer de fonctions relatives à la  Protection du Travailleur Isolé 
+ 
+ Réception de messages vocaux 
+ 
+ Gestion de l'annuaire des mobiles 
+ 
+ Fonction Push To Talk 
+ 
+ 
+
+ 
+     5 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Au niveau de la gestion de  
+ 
+ La possibilité d'émettre des alertes Protection du Travailleur  
+Isolé (DATI) évoluées dans des contextes WiFi ou Bluetooth GSM. 
+ 
+ Disposer de fonctions de géolocalisation évoluées 
+ 
+ Evoluer vers des utilisations de type M2M 
+ 
+ 
+ 
+Au niveau de la gestion des mobiles GSM 
+ 
+ Gérer les alertes PTI provenant d’un TiGR350 S 
+ 
+ La possibilité d'envoyer/recevoir/historiser des messages SMS 
+ 
+ Réception de messages vocaux 
+ 
+ 
+ 
+Au niveau de la gestion des mobiles DECT 
+ 
+ Disposer de fonctions relatives à la  Protection du Travailleur Isolé 
+(DT420/430/422/9D24 ) 
+ 
+ La possibilité d'envoyer/recevoir des SMS ( DT 410 /412/420 /430 /422/9D24 ) 
+ 
+ La possibilité de recevoir des SMS ( DT 570/590 ) 
+ 
+ Pouvoir procéder à la télécommande de process via touches programmables ( DT 
+410 /412/420 /430 /422/9D24 ) 
+ 
+ Réception de messages vocaux 
+ 
+ 
+Au niveau de la gestion des dispositifs Radio 
+ 
+ La possibilité d'envoyer/recevoir des messages  
+ 
+ Disposer de fonctions relatives à la  Protection du Travailleur Isolé  
+ 
+ 
+ 
+Au niveau de la gestion des postes fixes 
+ 
+ La possibilité de recevoir des messages vocaux 
+ La possibilité d’enregistrer des messages vocaux 
+ 
+  
+
+ 
+     6 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Au niveau de la gestion des PDA, PC 
+ 
+ La possibilité d'envoyer/recevoir des messages sous TCP/IP 
+ 
+ Disposer de l'émission/ réception via email de messages d'alarmes 
+ 
+ Exploiter une interface Browser Web pour expédier des messages 
+ 
+ Permettre la mise en place d'application spécifique client 
+ 
+ 
+ 
+ 
+Au niveau de la gestion des centrales Appel Malade, Détection Incendie 
+ 
+ Extraire protocolairement toute information que SAFEBELL MANAGER devra 
+diffuser ( appel normal, d’urgence, acquittement…) 
+ 
+ 
+ 
+ 
+Au niveau de la gestion des Contacts Secs, analogiques 
+ 
+ Exploiter les entrées/sorties activées 
+ 
+ Permettre la diffusion d'information relative à des systèmes d'authentification, 
+ 
+ Contrôle d’accès 
+ 
+
+ 
+     7 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Relais, numérique 
+ou analogique, 
+badging 
+Messages pour 
+DT 4xx , 570, 590, 
+GSM, WiFi Phone, Radio set 
+Relais, télécommande 
+Centrale au fil de 
+l’eau, GTC, GTB, 
+Appels malade, 
+central incendie, 
+centrale intrusion 
+DATI, 
+SMS,télécommande 
+Camera, détection de 
+mouvement 
+ 
+Messages 
+vocaux 
+Trame TCP/IP,   
+application cliente 
+E-mail  
+Sorties 
+Entrées 
+
+ 
+            8 
+ 
+ 
+ 
+ 
+ 
+ 
+Richesse fonctionnelle et ergonomie totale 
+Sources multiples d’acquisition 
+Gestion simple du PTI avec une localisation visuel des événements 
+Traçabilité et consultation des historiques 
+
+   
+           9 
+ 
+ 
+un produit  complet 
+Une prise en compte et 
+un traitement facilité des 
+alarmes 
+Des niveaux de 
+paramétrages 
+puissants 
+
+   
+           10 
+ 
+1 Appel émis depuis une 
+chambre relayé par une 
+centrale d’appel malade 
+2 Appel géré par Safebell Manager : 
+Déclenchement des procédures de 
+diffusion des mini messages 
+3 Traçabilité et  historique des 
+évènements: 
+Acquittement 
+Escalade de scénario 
+Réitération 
+Télécommande de Processus 
+& 
+La Gestion des Appels Malades 
+1er Exemple Applicable au Secteur Santé 
+Réseau radio 
+Réseau filaire 
+Réseau Ethernet 
+
+   
+           11 
+ 
+ 
+ 
+1 Alarme émise à partir de 
+Modules TOR, Analogiques, 
+GTC 
+2 Acquisition d’alarme par Safebell Manager : 
+Déclenchements des procédures 
+3 Diffusion  par Safebell Manager 
+Mini messages  
+Messages vocaux 
+Messagerie d’entreprise 
+Messages TCP/IP 
+Télécommande de Processus 
+2ème Exemple Applicable au Secteur Industriel 
+ 
+Réseau radio 
+Réseau filaire 
+Réseau Ethernet 
+& 
+La Gestion des Alarmes Techniques 
+   
+           12 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1 Alerte émise à partir de TiGR350S, 
+SafeBell Pocket, DECT, WiFi: 
+Appel Volontaire 
+Perte de Verticalité 
+Immobilité Prolongée 
+Homme Mort 
+& 
+La Protection du  
+Travailleur Isolé 
+Réseau radio 
+3 Diffusion par Safebell Manager: 
+Mini messages  
+Messages vocaux 
+Messagerie d  ’entreprise 
+Messages TCP/IP 
+2 Acquisition de l’alerte par Safebell Manager :
+Déclenchements des procédures 
+Visualisation des informations utiles 
+Géolocalisation 
+Traitement de l’alerte 
+3ème Exemple Applicable à tout Secteur 
+Réseau radio 
+Réseau filaire 
+Réseau Ethernet 
+
+  
+    13 
+ 
+ 
+ 
+Caractéristiques résumées de SAFEBELL MANAGER  
+ 
+ Exploitation du GSM PTI TiGR350 S et des Boîtiers SafeBell Pocket 
+ Exploitation de mobiles Wifi ( Spectralink Netlink e340 et I640) 
+ Exploitation de mobiles DECT (DT570,  DT410, DT412, DT420, DT430, DT422, 
+DT590,9D24) 
+ Exploitation de mobiles GSM 
+ Exploitation de Talkie Walkie ( norme CCIR 5 tons) 
+ Gestion de supervision de type sécurité positive de l'infrastructure, 
+ Traçabilité et historisation de tous les événements gérés, 
+ Interface native avec la majorité des so urces d'informations ( centrales d'appel 
+malade, GTC, Centrales détection incendie, application TCP/IP.... 
+ Audit permanent des différentes infrastructures, 
+ Interface graphique ergonomique et intuitive 
+ Création souple et rapide de scénario puissant permettant de gérer tout type 
+d'évènement en entrée comme en sortie, 
+ Traitement simple des alarmes reçues, 
+ Géolocalisation des mobiles (DECT, WiFi, Process) 
+ Présence d'un requeteur et d'un dispositif de reporting des évènement historisés, 
+ Evolutivité forte par adjonction ultéri eure de nouveaux services comme la 
+Protection du travailleur Isolé, 
+ Connexion native avec le réseau GSM 
+ Connectivité à la majorité des PABX du marché 
+ Maîtrise totale du site par le client, 
+ Présence attentive et réactive du support technique du constructeur. 
+  
+    14 
+ 
+Secteurs d’Activité exploitant déjà SAFEBELL 
+MANAGER 
+ 
+Chambres du commerce Cliniques 
+Hôpitaux Hôpitaux psychiatriques 
+Communautés urbaines Extraction minière 
+Imprimeries Industrie aéronautique 
+Industrie chimique Industrie nucléaire 
+Industrie agro-alimentaire Laboratoire biologique 
+Laboratoire de recherche Mairie 
+Maison de retraite Parkings municipaux 
+Traitement des eaux Maison d’arrêt 
+Grande distribution Logistique  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Quelques références 
+ 
+ Air France 
+ Cliniques Groupe 
+Hospitalor 
+ SNECMA 
+ CEA 
+ Procter & Gamble 
+ SKF 
+ Cogema 
+ ABB 
+ AFM (Association 
+France Myopathe) 
+ Yoplait 
+ Parkings de Reims 
+ Hôpital de 
+Valenciennes 
+ Dalkia 
+ Danone 
+ Nestlé 
+ LFB Lafarge 
+ Pechiney 
+ Béghin Say 
+ Saint Louis Sucre 
+ Schneider 
+ 
+
+
+--- MobeeWeb ISAFE doc 2017.ppt ---
+Skipped or format not supported by script directly (like .ppt)
+
+
+--- Mobeeweb synthese.pdf ---
+  
+MobeeWeb V2 B.L.E
+Plate-forme Web de réception et de traitement d’alertes
+    Protection de Travailleurs Isolés
+Rondes Techniques
+ Géo localisation Outdoor/ Indoor ( Android >= 4.3)
+Tag NFC
+beacon BLE
+
+       Alerte PTI
+Bat Stock chimie
+       1er étage
+       escalier B
+Attention, Zone 
+dangereuse
+Port du masque
+Et  GSM Atex 
+Obligatoire
+Attention,
+   Géo localisation Outdoor/ Indoor
+Protection de travailleurs isolés
+Consignes de sécurité
+Rondes techniques
+B
+Option
+
+  
+Coté Mobile ( MutuaDroid)
+-compatible GSM, GPRS,WIF / GPS, BLE
+-Alerte sur perte de verticalité, Immobilité, agression, manuelle ( bouton SOS)
+-Mots de passe pour,  l'arrêt de la protection, la sortie de l'application, l’accès aux 
+paramètres
+Timers, angles et sensibilité paramétrables
+-Émission bi modalité des alertes ( SMS et GPRS) avec répétition programmable
+-Émission optionnelle du status de protection ( PTI On/Off)
+-Émission optionnelle du status batterie basse
+-Appel vocal en mode mains libres vers le poste de sécurité
+-Notification vocale sur les fixes en mode TTS ( si relecture SMS en mode vocal disponible 
+chez l'opérateur GSM)
+-
+Synthèse fonctionnalités
+
+  
+En phase d'alerte balise sonore ( niveau programmable) et lumineuse ( optionnelle)
+-Notification manque couverture ( pop up et/ou vocale), Icône GPS , BLE
+-Compatibilité localisation Indoor par balise Bluetooth Low Energy ( Android >= 4.3)
+-Sur terminal RG310 arrêt programmable de la protection en cas d'utilisation de la lampe led
+-Désactivation optionnelle de la protection quand terminal en charge
+-Réception et localisation des alertes émises par d'autres terminaux, concept de protection 
+mutuelle pour équipes de travail
+-Les alertes sont envoyées en quelques secondes en mode SMS(réitération programmable) 
+et simultanément en mode GPRS , sous condition de la présence du réseau, elles sont 
+réitérées en mode GPRS jusqu’à réception de la réponse de Mobeeweb
+Synthèse fonctionnalités
+  
+Coté serveur de réception et de traitement des alertes Mobeeweb
+-Version serveur rackable ou intégration VMware
+-Autotest journalier par envoi programmé d'un message de test et notification SMS et mail de la réussite 
+de la transaction ( cette méthode test : Mobeeweb, la connexion  la passerelle GSM, la connexion au 
+réseau IP, la connexion Internet)
+-Réception des alertes en mode pop up automatique, en mode PC Local soit en mode Web, alerte 
+sonore
+-Utilisateurs multiples ( Log In, MdP)
+-Connecteur automatique Google Earth
+-Gestion des consignes d'intervention suivant localisation ( ex: attention zone classée, code d’accès 
+porte 1234, extincteur à coté du placard à droite …)
+-Génération automatique de la fiche itinéraire ( d'un point PC Sécurité vers le lieu de l'alerte)
+imprimable ou transmission mail.
+-Diffusion des alertes géolocalisées en mode SMS et/ou Mail
+-Intégration de plans client en surcouche
+-Localisation Indoor ( position GPS 2D et libellé précis ( ex: tunnel N°2 Km 4,5, local technique à gauche)
+Synthèse fonctionnalités
+  
+-Historisation des alertes avec indication de la localisation et de l’acquittement horodaté de 
+prise en compte
+-Gestion et historisation de l'état de protection ( PTI On/Off)
+-Envoi manuel SMS, Mails depuis Mobeeweb
+-Option programmation OTA ( Over The Air)
+-Option envoi préprogrammés SMS, Mails ( sur étude)
+-Option rondier (RondiDroid)
+MutualDroid et Mobeeweb sont des applications déposées à L'INPI et entièrement 
+développées par nos ingénieurs.
+Nous sommes en mesure, après étude d'un cahier des charges de réaliser toutes 
+modifications ou nouvelles fonctionnalités qui seraient souhaitées.
+Synthèse fonctionnalités
+
+
+--- NephroCall.pptx ---
+
+Moyens
+           Collecter les alarmes hétérogènes
+           Monitorer les éléments actifs
+           Paramétrer les scenarri de diffusions
+           d’informations vers tout média,
+ 
+
+
+
+
+
+           Traçer les événements 
+           du site 24/24 
+NephroCall by
+Package de Supervision d'équipements hétérogènes de Centre de Dialyse
+    
+
+
+
+
+
+SafeFull Systems 	Infoline : 01 53 90 40 95	marc.dequecker@safefull.com
+
+
+Alarme Centrale Fresenius
+Résultats
+ Offrir de la réactivité et 
+de l'agilité à l’équipe Bio Médicale
+ Evoluer dans le temps selon 
+les nouveaux équipements 
+ou organisation mis en place
+Objectifs
+       	                          Informer en temps réel et en mobilité  
+                                   d'une anomalie technique survenant 
+                                   dans un centre de dialyse
+
+NephroCall by
+Package de Supervision d'équipements hétérogènes de Centre de Dialyse
+    
+SafeFull Systems 	Infoline : 01 53 90 40 95	marc.dequecker@safefull.com
+
+Defaut Centrale Traitement Eau Fresenius
+Defaut Disjoncteur Ascenseur
+Defaut Disjoncteur Chaufferie
+Defaut Disjoncteur CTA
+Defaut Inverseur Normal Secours
+Defaut Secteur Secours
+Defaut Secteur Normal
+Groupe Electrogène Défaut Groupe
+Groupe Electrogène Niveau Bas Fuel
+Niveau Haut Fosse Pompe relevage Traitement Eau
+Defaut Pompes Relevage Traitement Eau
+Niveau Haut Pompe Relevage EP
+Non Mise en service Auto Centrale Intrusion
+Defaut Centrale Intrusion
+Derangement Centrale Incendie
+Diffusion scénarisée vers SMS Gsm , Mail ( extension vers DECT internes si infrastructure et protocole disponibles)
+Gestion de la sécurité positive avec auto-test paramétrable ( watch Dog) 
+	du bon fonctionnement de l'infrastructure d'acquisition comme celle de diffusion.
+Gestion des principaux équipements du site via Entrées digitales ou analogiques( jusqu'à 32 alarmes primaires via extension)
+Possibilité de couplage à des dispositifs appels malades, centrale intrusion, détection Incendie par zone ( selon extension en mode série, espaa, Opc )
+Possibilité de télé-piloter des Sortie de type relais ( 8 maximum)
+Liste des destinataires non limitée
+Gestion des plages horaires pour diffusion différenciée jour/nuit, Semaine/Week End, Exception.
+
+Historique des alarmes stockées et accessibles via requête .
+Assistance au paramétrage 
+Fourniture complète du package télé paramétrable : serveur Nephro Call, BoitierIP acquisition   Contacts, passerelle GSM
+
+
+
+--- Vignette1_MobeeWeb.pptx ---
+MutualDroid & MobeeWeb   by
+
+
+
+
+       Alerte PTI
+Bat Stock chimie
+       1er étage
+       escalier B
+
+Attention, Zone dangereuse
+Port du masque
+Et  GSM Atex 
+Obligatoire
+
+B
+
+Solution de Protection de travailleurs isolés sous Android couplée à une plateforme de géolocalisation Indoor/Outdoor et de suivi de consignes de sécurité
+
+
+--- Vignette1_NephroCall.pptx ---
+NephroCall by
+
+
+
+
+
+
+Résultats
+ Offrir de la réactivité et 
+de l'agilité à l’équipe Bio Médicale
+ Evoluer dans le temps selon 
+les nouveaux équipements 
+ou organisation mis en place
+Objectifs
+  Informer en temps réel 24/24 et en mobilité  
+      d'une anomalie technique survenant 
+      dans un centre de dialyse ou dans plusieurs
+      centres  interconnectés
+Package de Supervision d'équipements hétérogènes 
+de Centre de Dialyse
+    
+
+
+
+Moyens
+  Collecter les alarmes hétérogènes
+   Monitorer les éléments actifs
+    Paramétrer les scenarri de diffusions
+           d’informations vers tout média,
+ 
+
+
+
+
+   Traçer les événements 
+           du site 24/24 
+NephroCall Inside
+
+
+--- Vignette2_MobeeWeb.pptx ---
+MutualDroid & MobeeWeb   by
+Gestion paramétrable perte verticalité, immobilité, appel volontaire
+Main libre, haut parleur en Alarme, balise sonore
+timers , angles , sensibilité paramétrables
+GPS, Tags BLE compatibles
+Sécurisation des accès paramètres 
+Protection possible Mobile to Mobile ET/OU Mobile to Serveur MobeeWeb
+
+
+Intégration et zonage
+ éventuel du site client
+
+Accès aux consignes spécifiques
+de la zone d’incident.
+
+
+Gestion sécurisée de la base abonnés MutualDroid
+Géolocalisation Temps Réel du mobile en alarme ( GoogleMap,
+       GoogleEarth)
+Renvois automatiques de alarmes géolocalisées vers équipe intervention
+Intégration Plans et Tags BLE
+Gestion des archives  
+
+
+
+
+--- Vignette2_NephroCall.pptx ---
+NephroCall by
+
+Défaut Centrale Traitement Eau Fresenius
+Défaut Disjoncteur Ascenseur
+Défaut Disjoncteur Chaufferie
+Défaut Disjoncteur CTA
+Défaut Inverseur Normal Secours
+Défaut Secteur Secours
+Défaut Secteur Normal
+Groupe Electrogène Défaut Groupe
+Groupe Electrogène Niveau Bas Fuel
+Niveau Haut Fosse Pompe relevage Traitement Eau
+Défaut Pompes Relevage Traitement Eau
+Niveau Haut Pompe Relevage EP
+Non Mise en service Auto Centrale Intrusion
+Défaut Centrale Intrusion
+Dérangement Centrale Incendie
+Diffusion scénarisée vers SMS Gsm , Mail ( extension vers DECT internes si infrastructure et protocole disponibles)
+Gestion de la sécurité positive avec auto-test paramétrable ( watch Dog) 
+du bon fonctionnement de l'infrastructure d'acquisition comme celle de diffusion.
+Gestion des principaux équipements du site via Entrées digitales ou analogiques( jusqu'à 32 alarmes primaires via extension)
+Possibilité de couplage à des dispositifs appels malades, centrale intrusion, détection Incendie par zone ( selon extension en mode série, espaa, Opc )
+Possibilité de télé-piloter des Sortie de type relais ( 8 maximum)
+Liste des destinataires non limitée
+Gestion des plages horaires pour diffusion différenciée jour/nuit, Semaine/Week End, Exception.
+
+Historique des alarmes stockées et accessibles via requête .
+Assistance au paramètrage 
+Fourniture complète du package télé paramétrable : serveur Nephro Call, BoitierIP acquisition   Contacts, passerelle GSM
+
+Package de Supervision d'équipements hétérogènes 
+de Centre de Dialyse
+    

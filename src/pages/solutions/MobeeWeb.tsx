@@ -1,6 +1,7 @@
 import { Smartphone, MapPin, Radio, ShieldAlert, Route, Activity, ArrowRight } from 'lucide-react';
 import { FadeIn } from '../../components/FadeIn';
 import { Link } from 'react-router-dom';
+import { SEOHead } from '../../components/SEOHead';
 
 export function MobeeWeb() {
     const jsonLd = {
@@ -10,6 +11,10 @@ export function MobeeWeb() {
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Android >= 4.3, Web",
         "description": "Plate-forme Web de réception et de traitement d'alertes pour la Protection des Travailleurs Isolés (PTI/DATI). Intégration certifiée des balises BLE et Tags NFC pour une localisation Indoor d'une précision absolue.",
+        "provider": {
+            "@type": "Organization",
+            "name": "Safefull Systems"
+        }
     };
 
     const features = [
@@ -58,21 +63,25 @@ export function MobeeWeb() {
     ];
 
     return (
-        <div className="bg-deep-dark min-h-screen pb-24">
-            {/* Script JSON-LD injecté pour le Generative Engine Optimization */}
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        <main className="bg-deep-dark min-h-screen pb-24">
+            <SEOHead
+                title="MobeeWeb : Solution PTI et Sécurité Communicante | Safefull Systems"
+                description="Découvrez MobeeWeb, notre application de Protection des Travailleurs Isolés (PTI - DATI). Assurez la sécurité de vos équipes sur le terrain."
+                canonicalUrl="/solutions/mobeeweb"
+                jsonLd={jsonLd}
+            />
 
             {/* Grid d'arrière plan type technologie sombre */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none h-[50vh]"></div>
 
-            <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pt-24 sm:pt-32">
+            <section className="relative mx-auto max-w-7xl px-6 lg:px-8 pt-24 sm:pt-32">
                 <div className="mx-auto max-w-3xl text-center">
                     <FadeIn direction="up">
-                        <h2 className="text-sm font-bold tracking-widest text-safefull-slate uppercase">Protection des Travailleurs Isolés (PTI)</h2>
-                        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
+                        <h2 className="text-sm font-bold tracking-widest text-safefull-slate uppercase text-balance">Protection des Travailleurs Isolés (PTI)</h2>
+                        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl text-balance">
                             MobeeWeb <span className="text-transparent bg-clip-text bg-gradient-to-r from-safefull-orange to-safefull-slate">V2 B.L.E</span>
                         </h1>
-                        <p className="mt-6 text-xl leading-8 text-gray-400 font-medium">
+                        <p className="mt-6 text-xl leading-8 text-gray-400 font-medium text-pretty">
                             Plate-forme web d'hypercentralisation et traitement d'alertes PTI couplée à l'application native MutualDroid. Des algorithmes de détection intraitables, une localisation Indoor (BLE/NFC) sur-mesure.
                         </p>
                     </FadeIn>
@@ -86,8 +95,8 @@ export function MobeeWeb() {
                                     <div className={`mb-6 inline-flex h-14 w-14 items-center justify-center rounded-lg bg-deep-dark shadow-inner border border-white/10 transition-transform duration-300 group-hover:scale-110 ${feature.borderColor}`}>
                                         <feature.icon className={`h-6 w-6 ${feature.color}`} />
                                     </div>
-                                    <h3 className="text-lg font-bold text-white mb-3 tracking-wide">{feature.title}</h3>
-                                    <p className="text-gray-400 leading-relaxed text-sm flex-grow">
+                                    <h3 className="text-lg font-bold text-white mb-3 tracking-wide text-balance">{feature.title}</h3>
+                                    <p className="text-gray-400 leading-relaxed text-sm flex-grow text-pretty">
                                         {feature.description}
                                     </p>
                                 </div>
@@ -100,8 +109,8 @@ export function MobeeWeb() {
                     <div className="relative overflow-hidden rounded-2xl border border-safefull-orange/30 bg-glass-gradient p-12 text-center shadow-orange-glow backdrop-blur-2xl group">
                         <div className="absolute inset-0 bg-safefull-orange/5 transform transition-transform duration-1000 group-hover:scale-110"></div>
                         <div className="relative z-10">
-                            <h2 className="text-3xl font-extrabold text-white mb-6 tracking-tight">Sécurisez votre capital humain dès aujourd'hui</h2>
-                            <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">
+                            <h2 className="text-3xl font-extrabold text-white mb-6 tracking-tight text-balance">Sécurisez votre capital humain dès aujourd'hui</h2>
+                            <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto text-pretty">
                                 Ne laissez pas vos travailleurs isolés sans supervision critique. Obtenez une démonstration sur-mesure de MobeeWeb.
                             </p>
 
@@ -127,7 +136,7 @@ export function MobeeWeb() {
                         </div>
                     </div>
                 </FadeIn>
-            </div>
-        </div>
+            </section>
+        </main>
     );
 }

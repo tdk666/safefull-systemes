@@ -72,8 +72,8 @@ export function LeadForm() {
             <FadeIn>
                 <div className="rounded-none border border-safefull-slate/30 bg-safefull-slate/5 p-8 text-center backdrop-blur-sm">
                     <ShieldCheck className="mx-auto h-12 w-12 text-safefull-slate mb-4" />
-                    <h3 className="text-xl font-bold text-white mb-2">Demande reçue avec succès</h3>
-                    <p className="text-gray-300">
+                    <h3 className="text-xl font-bold text-white mb-2 text-balance">Demande reçue avec succès</h3>
+                    <p className="text-gray-300 text-pretty">
                         Notre équipe d'experts prendra contact avec vous dans les plus brefs délais pour
                         organiser une démonstration ou un audit de vos besoins de sécurité.
                     </p>
@@ -104,7 +104,7 @@ export function LeadForm() {
                         placeholder="Nom de votre structure"
                     />
                     {errors.company_name && (
-                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1 text-pretty" role="alert">
                             <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.company_name.message}
                         </p>
                     )}
@@ -123,7 +123,7 @@ export function LeadForm() {
                         placeholder="Votre nom complet"
                     />
                     {errors.contact_name && (
-                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1 text-pretty" role="alert">
                             <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.contact_name.message}
                         </p>
                     )}
@@ -144,7 +144,7 @@ export function LeadForm() {
                         placeholder="vous@entreprise.com"
                     />
                     {errors.email && (
-                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1 text-pretty" role="alert">
                             <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.email.message}
                         </p>
                     )}
@@ -168,7 +168,7 @@ export function LeadForm() {
                         ))}
                     </select>
                     {errors.industry && (
-                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1 text-pretty" role="alert">
                             <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.industry.message}
                         </p>
                     )}
@@ -188,7 +188,7 @@ export function LeadForm() {
                     placeholder="Décrivez brièvement le contexte de votre demande (PTI, alarmes hospitalières, etc.)."
                 />
                 {errors.message && (
-                    <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                    <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1 text-pretty" role="alert">
                         <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.message.message}
                     </p>
                 )}
@@ -210,7 +210,7 @@ export function LeadForm() {
                             J'ai lu et j'accepte la <a href="/politique-confidentialite" target="_blank" rel="noopener noreferrer" className="text-safefull-orange hover:underline">Politique de Confidentialité</a>.
                         </label>
                         {errors.rgpd_consent && (
-                            <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                            <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1 text-pretty" role="alert">
                                 <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.rgpd_consent.message}
                             </p>
                         )}
@@ -234,7 +234,7 @@ export function LeadForm() {
                 </button>
                 <div className="mt-6 flex items-start gap-3 border-t border-white/10 pt-4">
                     <ShieldCheck className="h-5 w-5 flex-shrink-0 text-safefull-slate" />
-                    <p className="text-xs leading-relaxed text-gray-500">
+                    <p className="text-xs leading-relaxed text-gray-500 text-pretty">
                         En soumettant ce formulaire, j'accepte que les informations saisies soient traitées dans le strict cadre de ma demande. Pour connaître et exercer vos droits, notamment d'accès, de rectification ou de retrait de votre consentement, veuillez consulter notre <a href="/politique-confidentialite" target="_blank" rel="noopener noreferrer" className="text-safefull-orange hover:underline">Politique de Confidentialité</a>. Vos données sont chiffrées de bout en bout et ne sont jamais partagées à des tiers.
                     </p>
                 </div>

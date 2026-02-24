@@ -31,10 +31,10 @@ export function References() {
                             <Trophy className="h-4 w-4" />
                             La Preuve Sociale Absolue
                         </div>
-                        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
+                        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl text-balance">
                             Ils s'appuient sur notre <span className="text-transparent bg-clip-text bg-gradient-to-r from-safefull-slate to-safefull-orange">Résilience</span>
                         </h1>
-                        <p className="mt-6 text-xl leading-8 text-gray-400 font-medium">
+                        <p className="mt-6 text-xl leading-8 text-gray-400 font-medium text-pretty">
                             Depuis des années, SafeFull Systems sécurise les infrastructures les plus exigeantes. Du pôle nucléaire aux chaînes d'assemblage aéronautiques, l'erreur n'est pas une option.
                         </p>
                     </FadeIn>
@@ -65,7 +65,7 @@ export function References() {
 
                 {/* Grille des clients en "Pills" Design 2026 */}
                 <div className="mt-32 max-w-6xl mx-auto">
-                    <h3 className="text-xl font-bold text-white mb-12 text-center tracking-wide">
+                    <h3 className="text-xl font-bold text-white mb-12 text-center tracking-wide text-balance">
                         L'Exigence Partagée par les Leaders
                     </h3>
                     <div className="flex flex-wrap justify-center gap-4">
@@ -85,8 +85,8 @@ export function References() {
                     <div className="relative overflow-hidden rounded-3xl border border-safefull-slate/30 bg-glass-gradient p-12 text-center shadow-2xl backdrop-blur-2xl group">
                         <div className="absolute inset-0 bg-safefull-slate/5 transform transition-transform duration-1000 group-hover:scale-110"></div>
                         <div className="relative z-10">
-                            <h2 className="text-3xl font-extrabold text-white mb-6 tracking-tight">Votre logo a sa place ici.</h2>
-                            <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">
+                            <h2 className="text-3xl font-extrabold text-white mb-6 tracking-tight text-balance">Votre logo a sa place ici.</h2>
+                            <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto text-pretty">
                                 Rejoignez les acteurs majeurs de l'industrie et de la santé qui sécurisent leur capital humain et technologique avec Safefull Systems.
                             </p>
                             <Link

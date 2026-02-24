@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import type { ElementType, ReactNode } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 
 interface FadeInProps {
@@ -6,13 +6,15 @@ interface FadeInProps {
     delay?: number;
     direction?: 'up' | 'down' | 'left' | 'right' | 'none';
     className?: string;
+    as?: ElementType;
 }
 
-export function FadeIn({ children, delay = 0, direction = 'up', className = '' }: FadeInProps) {
+export function FadeIn({ children, delay = 0, direction = 'up', className = '', as = 'div' }: FadeInProps) {
     const shouldReduceMotion = useReducedMotion();
+    const Tag = as as ElementType;
 
     if (shouldReduceMotion) {
-        return <div className={className}>{children}</div>;
+        return <Tag className={className}>{children}</Tag>;
     }
 
     const directions = {
@@ -23,8 +25,10 @@ export function FadeIn({ children, delay = 0, direction = 'up', className = '' }
         none: { x: 0, y: 0 },
     };
 
+    const MotionComponent = motion[as as keyof typeof motion] as any;
+
     return (
-        <motion.div
+        <MotionComponent
             initial={{ opacity: 0, ...directions[direction] }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             viewport={{ once: true, margin: '-50px' }}
@@ -32,6 +36,6 @@ export function FadeIn({ children, delay = 0, direction = 'up', className = '' }
             className={`max-md:!transform-none max-md:!opacity-100 ${className}`}
         >
             {children}
-        </motion.div>
+        </MotionComponent>
     );
 }

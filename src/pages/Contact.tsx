@@ -20,13 +20,13 @@ export function Contact() {
                             <ShieldCheck className="h-4 w-4" />
                             Connexion Chiffrée
                         </div>
-                        <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6">
+                        <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6 text-balance">
                             Initiez votre <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-safefull-orange to-safefull-slate">
                                 Audit Sécurité
                             </span>
                         </h1>
-                        <p className="text-lg text-gray-400 mb-12 leading-relaxed">
+                        <p className="text-lg text-gray-400 mb-12 leading-relaxed text-pretty">
                             Nos ingénieurs analysent vos infrastructures (hôpitaux, sites industriels) pour déployer une solution PTI ou de supervision d'alarmes sur-mesure.
                         </p>
 
@@ -37,8 +37,8 @@ export function Contact() {
                                     <Clock className="h-6 w-6 text-safefull-orange" />
                                 </div>
                                 <div>
-                                    <h3 className="text-white font-bold tracking-wide">Réponse sous 2h</h3>
-                                    <p className="text-sm text-gray-500">Un expert technique vous rappelle pour qualifier votre besoin.</p>
+                                    <h3 className="text-white font-bold tracking-wide text-balance">Réponse sous 2h</h3>
+                                    <p className="text-sm text-gray-500 text-pretty">Un expert technique vous rappelle pour qualifier votre besoin.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -46,8 +46,8 @@ export function Contact() {
                                     <PhoneCall className="h-6 w-6 text-safefull-slate" />
                                 </div>
                                 <div>
-                                    <h3 className="text-white font-bold tracking-wide">Ligne Directe B2B</h3>
-                                    <p className="text-sm text-gray-500 font-mono mt-1">06 62 14 90 24</p>
+                                    <h3 className="text-white font-bold tracking-wide text-balance">Ligne Directe B2B</h3>
+                                    <p className="text-sm text-gray-500 font-mono mt-1 text-pretty">06 62 14 90 24</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -55,8 +55,8 @@ export function Contact() {
                                     <Lock className="h-6 w-6 text-gray-400" />
                                 </div>
                                 <div>
-                                    <h3 className="text-white font-bold tracking-wide">Confidentialité Stricte</h3>
-                                    <p className="text-sm text-gray-500">Vos données ne sont jamais partagées.</p>
+                                    <h3 className="text-white font-bold tracking-wide text-balance">Confidentialité Stricte</h3>
+                                    <p className="text-sm text-gray-500 text-pretty">Vos données ne sont jamais partagées.</p>
                                 </div>
                             </div>
                         </div>

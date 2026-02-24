@@ -71,11 +71,11 @@ export function NephroCall() {
             <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pt-24 sm:pt-32">
                 <div className="mx-auto max-w-3xl text-center">
                     <FadeIn direction="up">
-                        <h2 className="text-sm font-bold tracking-widest text-safefull-slate uppercase">Supervision de Centres de Dialyse</h2>
-                        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
+                        <h2 className="text-sm font-bold tracking-widest text-safefull-slate uppercase text-balance">Supervision de Centres de Dialyse</h2>
+                        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl text-balance">
                             Architecture <span className="text-transparent bg-clip-text bg-gradient-to-r from-safefull-slate to-safefull-orange">NephroCall</span>
                         </h1>
-                        <p className="mt-6 text-xl leading-8 text-gray-400 font-medium">
+                        <p className="mt-6 text-xl leading-8 text-gray-400 font-medium text-pretty">
                             Une agilité totale pour l'équipe Bio-Médicale. Collectez vos alarmes Fresenius, monitorez vos éléments électriques critiques, et diffusez vos scénarios de crises instantanément via Ethernet & GSM.
                         </p>
                     </FadeIn>
@@ -89,8 +89,8 @@ export function NephroCall() {
                                     <div className={`mb-6 inline-flex h-14 w-14 items-center justify-center rounded-lg bg-deep-dark shadow-inner border border-white/10 transition-transform duration-300 group-hover:scale-110 ${feature.borderColor}`}>
                                         <feature.icon className={`h-6 w-6 ${feature.color}`} />
                                     </div>
-                                    <h3 className="text-lg font-bold text-white mb-3 tracking-wide">{feature.title}</h3>
-                                    <p className="text-gray-400 leading-relaxed text-sm flex-grow">
+                                    <h3 className="text-lg font-bold text-white mb-3 tracking-wide text-balance">{feature.title}</h3>
+                                    <p className="text-gray-400 leading-relaxed text-sm flex-grow text-pretty">
                                         {feature.description}
                                     </p>
                                 </div>
@@ -103,8 +103,8 @@ export function NephroCall() {
                     <div className="relative overflow-hidden rounded-2xl border border-safefull-slate/30 bg-glass-gradient p-12 text-center shadow-glass backdrop-blur-2xl group">
                         <div className="absolute inset-0 bg-safefull-slate/5 transform transition-transform duration-1000 group-hover:scale-110"></div>
                         <div className="relative z-10">
-                            <h2 className="text-3xl font-extrabold text-white mb-6 tracking-tight">Supervisez votre architecture vitale dès aujourd'hui</h2>
-                            <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">
+                            <h2 className="text-3xl font-extrabold text-white mb-6 tracking-tight text-balance">Supervisez votre architecture vitale dès aujourd'hui</h2>
+                            <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto text-pretty">
                                 NephroCall est fourni sous forme de package clef en main, télé-paramétrable 24/7 par nos ingénieurs. Obtenez un audit métier pour votre centre.
                             </p>
 

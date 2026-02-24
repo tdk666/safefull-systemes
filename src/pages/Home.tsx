@@ -24,10 +24,10 @@ export function Home() {
                 <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <FadeIn direction="up">
                         <div className="text-center max-w-3xl mx-auto mb-16">
-                            <h2 className="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase mb-4">
+                            <h2 className="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase mb-4 text-balance">
                                 Ingénierie Sectorielle
                             </h2>
-                            <h3 className="text-3xl font-extrabold text-white sm:text-4xl">
+                            <h3 className="text-3xl font-extrabold text-white sm:text-4xl text-balance">
                                 Des architectures pensées pour votre écosystème
                             </h3>
                         </div>
@@ -42,8 +42,8 @@ export function Home() {
                                     <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-deep-dark border border-safefull-slate/30 shadow-inner transition-transform duration-500 group-hover:scale-110">
                                         <Stethoscope className="h-8 w-8 text-safefull-slate" />
                                     </div>
-                                    <h4 className="text-2xl font-bold text-white mb-4 tracking-tight">Hôpitaux & Cliniques</h4>
-                                    <p className="text-gray-400 mb-8 leading-relaxed flex-grow">
+                                    <h4 className="text-2xl font-bold text-white mb-4 tracking-tight text-balance">Hôpitaux & Cliniques</h4>
+                                    <p className="text-gray-400 mb-8 leading-relaxed flex-grow text-pretty">
                                         Supervision native Fresenius (NephroCall), alertes PTI en chambre, et traçabilité d'alarmes hétérogènes pour équipes biomédicales.
                                     </p>
                                     <div className="inline-flex items-center text-sm font-bold text-safefull-slate uppercase tracking-wider">
@@ -62,8 +62,8 @@ export function Home() {
                                     <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-deep-dark border border-safefull-orange/30 shadow-inner transition-transform duration-500 group-hover:scale-110">
                                         <Factory className="h-8 w-8 text-safefull-orange" />
                                     </div>
-                                    <h4 className="text-2xl font-bold text-white mb-4 tracking-tight">Industrie & Logistique</h4>
-                                    <p className="text-gray-400 mb-8 leading-relaxed flex-grow">
+                                    <h4 className="text-2xl font-bold text-white mb-4 tracking-tight text-balance">Industrie & Logistique</h4>
+                                    <p className="text-gray-400 mb-8 leading-relaxed flex-grow text-pretty">
                                         Protection des Travailleurs Isolés (MobeeWeb) en zone ATEX, géolocalisation Indoor BLE précise, et gestion de crise sur sites à risques.
                                     </p>
                                     <div className="inline-flex items-center text-sm font-bold text-safefull-orange uppercase tracking-wider">

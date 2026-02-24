@@ -45,7 +45,7 @@ export function CookieBanner() {
                     <div className="flex flex-col gap-4">
                         <div className="flex items-start gap-3">
                             <ShieldAlert className="mt-0.5 h-5 w-5 flex-shrink-0 text-safefull-orange" />
-                            <p className="text-sm leading-relaxed text-gray-300">
+                            <p className="text-sm leading-relaxed text-gray-300 text-pretty">
                                 Nous utilisons des cookies pour sécuriser votre navigation et analyser notre trafic B2B.
                                 <a href="/gestion-cookies" className="ml-1 text-safefull-orange hover:underline focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-safefull-orange rounded-sm">En savoir plus</a>.
                             </p>

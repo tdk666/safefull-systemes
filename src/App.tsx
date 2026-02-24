@@ -11,6 +11,8 @@ import { Contact } from './pages/Contact';
 import { References } from './pages/References';
 import { About } from './pages/About';
 import { Legal } from './pages/Legal';
+import { GuidePTI } from './pages/blog/GuidePTI';
+import { NotFound } from './pages/NotFound';
 import { CookieBanner } from './components/CookieBanner';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { CookieManagement } from './pages/CookieManagement';
@@ -34,6 +36,10 @@ function App() {
             <Route path="/mentions-legales" element={<Legal />} />
             <Route path="/politique-confidentialite" element={<PrivacyPolicy />} />
             <Route path="/gestion-cookies" element={<CookieManagement />} />
+            <Route path="/blog/guide-pti" element={<GuidePTI />} />
+
+            {/* Fallback 404 */}
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

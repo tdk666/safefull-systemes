@@ -33,11 +33,11 @@ export function Sante() {
             <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pt-24 sm:pt-32">
                 <div className="mx-auto max-w-3xl text-center">
                     <FadeIn direction="up">
-                        <h2 className="text-sm font-bold tracking-widest text-safefull-slate uppercase">Santé & Ingénierie Biomédicale</h2>
-                        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
+                        <h2 className="text-sm font-bold tracking-widest text-safefull-slate uppercase text-balance">Santé & Ingénierie Biomédicale</h2>
+                        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl text-balance">
                             Criticité Zéro Défaut pour les <span className="text-transparent bg-clip-text bg-gradient-to-r from-safefull-slate to-safefull-orange">Établissements Médicaux</span>
                         </h1>
-                        <p className="mt-6 text-xl leading-8 text-gray-400 font-medium">
+                        <p className="mt-6 text-xl leading-8 text-gray-400 font-medium text-pretty">
                             Nous connectons nos suites logicielles (NephroCall, SafeBell) à votre infrastructure vitale. Appels malades, supervision des fluides cliniques, et protection du personnel soignant unifiés au sein d'une seule architecture sécurisée.
                         </p>
                     </FadeIn>
@@ -51,8 +51,8 @@ export function Sante() {
                             <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-deep-dark border border-white/10 shadow-inner transition-transform duration-500 group-hover:scale-110 group-hover:border-safefull-slate/50">
                                 <Activity className="h-6 w-6 text-safefull-slate" />
                             </div>
-                            <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">Supervision Dialyse (NephroCall)</h3>
-                            <p className="text-gray-400 leading-relaxed text-sm flex-grow">
+                            <h3 className="text-2xl font-bold text-white mb-4 tracking-tight text-balance">Supervision Dialyse (NephroCall)</h3>
+                            <p className="text-gray-400 leading-relaxed text-sm flex-grow text-pretty">
                                 Interfaçage direct avec les centrales de traitement d'eau Fresenius. SafeFull Systems remonte en temps réel sur DECT ou Smartphone les niveaux hauts de fosses, les défauts de pompes de relevage et la qualité de l'osmolalité. La sécurité du patient dialysé ne souffre d'aucun délai d'information.
                             </p>
                         </div>
@@ -63,8 +63,8 @@ export function Sante() {
                             <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-deep-dark border border-white/10 shadow-inner transition-transform duration-500 group-hover:scale-110 group-hover:border-safefull-orange/50">
                                 <BellRing className="h-6 w-6 text-safefull-orange" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-4 tracking-tight">Appels Malades Unifiés</h3>
-                            <p className="text-gray-400 leading-relaxed text-sm flex-grow">
+                            <h3 className="text-xl font-bold text-white mb-4 tracking-tight text-balance">Appels Malades Unifiés</h3>
+                            <p className="text-gray-400 leading-relaxed text-sm flex-grow text-pretty">
                                 Acquisition immédiate des déclenchements de chambres via protocole série ou relais, redirigée sans latence vers les terminaux du personnel (WiFi cliniques, bipers).
                             </p>
                         </div>
@@ -76,8 +76,8 @@ export function Sante() {
                                 {targets.map(target => (
                                     <div key={target.name} className="border border-white/5 bg-white/5 p-4 rounded-xl transition-colors hover:bg-safefull-slate/5 hover:border-safefull-slate/30">
                                         <Building2 className="h-5 w-5 text-safefull-slate mb-2" />
-                                        <h4 className="text-white font-bold text-sm mb-1">{target.name}</h4>
-                                        <p className="text-gray-500 text-xs">{target.desc}</p>
+                                        <h4 className="text-white font-bold text-sm mb-1 text-balance">{target.name}</h4>
+                                        <p className="text-gray-500 text-xs text-pretty">{target.desc}</p>
                                     </div>
                                 ))}
                             </div>
@@ -89,8 +89,8 @@ export function Sante() {
                             <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-deep-dark border border-white/10 shadow-inner transition-transform duration-500 group-hover:scale-110 group-hover:border-safefull-orange/50">
                                 <HeartPulse className="h-6 w-6 text-safefull-orange" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-4 tracking-tight">Traçabilité Médico-Légale</h3>
-                            <p className="text-gray-400 leading-relaxed text-sm flex-grow">
+                            <h3 className="text-xl font-bold text-white mb-4 tracking-tight text-balance">Traçabilité Médico-Légale</h3>
+                            <p className="text-gray-400 leading-relaxed text-sm flex-grow text-pretty">
                                 Le serveur SafeBell historise à la seconde près l'apparition, la prise en charge et l'acquittement de l'urgence biomédicale. Un requêteur SQL strict génère les rapports réglementaires.
                             </p>
                         </div>
@@ -98,8 +98,8 @@ export function Sante() {
                             <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-deep-dark border border-white/10 shadow-inner transition-transform duration-500 group-hover:scale-110 group-hover:border-safefull-slate/50">
                                 <ShieldAlert className="h-6 w-6 text-safefull-slate" />
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-4 tracking-tight">Protection Anti-Agression</h3>
-                            <p className="text-gray-400 leading-relaxed text-sm flex-grow">
+                            <h3 className="text-xl font-bold text-white mb-4 tracking-tight text-balance">Protection Anti-Agression</h3>
+                            <p className="text-gray-400 leading-relaxed text-sm flex-grow text-pretty">
                                 Face aux violences en psychiatrie ou aux urgences, les terminaux communicants offrent un accès rapide pour envoyer une alerte discrète et géolocalisée (DATI Médical) au PCSécurité.
                             </p>
                         </div>
@@ -111,8 +111,8 @@ export function Sante() {
                     <div className="relative overflow-hidden rounded-3xl border border-safefull-slate/20 bg-glass-gradient p-12 text-center shadow-2xl backdrop-blur-2xl group">
                         <div className="absolute inset-0 bg-safefull-slate/5 transform transition-transform duration-1000 group-hover:scale-110"></div>
                         <div className="relative z-10">
-                            <h2 className="text-3xl font-extrabold text-white mb-6 tracking-tight">Auditez la résilience médicale de votre infrastructure</h2>
-                            <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">
+                            <h2 className="text-3xl font-extrabold text-white mb-6 tracking-tight text-balance">Auditez la résilience médicale de votre infrastructure</h2>
+                            <p className="text-lg text-gray-400 mb-10 max-w-2xl mx-auto text-pretty">
                                 NephroCall et SafeBell sont déployés en partenariat avec les plus grands pôles santé. Garantissez la fluidité de l'information jusqu'à la sécurité du patient.
                             </p>
                             <Link

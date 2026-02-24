@@ -52,11 +52,11 @@ export function About() {
                         <div className="inline-flex items-center justify-center p-4 rounded-2xl bg-white/5 border border-white/10 mb-8 shadow-glass backdrop-blur-md">
                             <ShieldCheck className="h-10 w-10 text-safefull-slate" />
                         </div>
-                        <h2 className="text-xs font-bold tracking-[0.2em] text-safefull-slate uppercase">Qui Sommes-Nous ?</h2>
-                        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
+                        <h2 className="text-xs font-bold tracking-[0.2em] text-safefull-slate uppercase text-balance">Qui Sommes-Nous ?</h2>
+                        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl text-balance">
                             Sécuriser <span className="text-transparent bg-clip-text bg-gradient-to-r from-safefull-slate to-safefull-orange">l'Essentiel</span>
                         </h1>
-                        <p className="mt-6 text-xl leading-8 text-gray-400 font-medium">
+                        <p className="mt-6 text-xl leading-8 text-gray-400 font-medium text-pretty">
                             Depuis 2009, Safefull Systems est l'éditeur français de référence pour l'hypervision sécuritaire et les communications critiques B2B.
                         </p>
                     </FadeIn>
@@ -68,8 +68,8 @@ export function About() {
                     <FadeIn delay={0.1} direction="up" className="md:col-span-8">
                         <div className="group relative h-full rounded-3xl border border-white/5 bg-gradient-to-br from-white/[0.03] to-transparent p-10 shadow-glass backdrop-blur-xl transition-all duration-500 hover:border-safefull-orange/30 hover:bg-white/[0.05]">
                             <History className="h-10 w-10 text-safefull-orange mb-6 transition-transform duration-500 group-hover:-rotate-12" />
-                            <h3 className="text-3xl font-bold text-white mb-4 tracking-tight">Notre Héritage</h3>
-                            <p className="text-gray-400 leading-relaxed text-lg">
+                            <h3 className="text-3xl font-bold text-white mb-4 tracking-tight text-balance">Notre Héritage</h3>
+                            <p className="text-gray-400 leading-relaxed text-lg text-pretty">
                                 Fondée le 1er décembre 2009, Safefull Systems s'est immédiatement positionnée comme l'un des pionniers français de l'informatique de la sécurité métier. Après plusieurs années à équiper le secteur médical exigeant, notre expertise technique s'est naturellement imposée dans l'industrie 4.0.
                             </p>
                         </div>
@@ -79,8 +79,8 @@ export function About() {
                     <FadeIn delay={0.2} direction="up" className="md:col-span-4">
                         <div className="group relative h-full rounded-3xl border border-white/5 bg-gradient-to-br from-white/[0.03] to-transparent p-10 shadow-glass backdrop-blur-xl transition-all duration-500 hover:border-safefull-slate/30 hover:bg-white/[0.05]">
                             <Target className="h-10 w-10 text-safefull-slate mb-6 transition-transform duration-500 group-hover:scale-110" />
-                            <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">La Mission</h3>
-                            <p className="text-gray-400 leading-relaxed">
+                            <h3 className="text-2xl font-bold text-white mb-4 tracking-tight text-balance">La Mission</h3>
+                            <p className="text-gray-400 leading-relaxed text-pretty">
                                 Filtrer, centraliser et diffuser l'alerte en temps réel (PTI, IoT, Dialyse). L'homme doit rester l'ultime rempart efficace de son environnement.
                             </p>
                         </div>
@@ -93,8 +93,8 @@ export function About() {
                                 <Users className="h-48 w-48 text-white" />
                             </div>
                             <div className="relative z-10 max-w-3xl">
-                                <h3 className="text-3xl font-bold text-white mb-6 tracking-tight">Zéro Dette Technique. 100% Maîtrise.</h3>
-                                <p className="text-gray-400 leading-relaxed text-lg">
+                                <h3 className="text-3xl font-bold text-white mb-6 tracking-tight text-balance">Zéro Dette Technique. 100% Maîtrise.</h3>
+                                <p className="text-gray-400 leading-relaxed text-lg text-pretty">
                                     Notre pérennité systémique découle directement de nos fondateurs experts, Dominique Cornillet et Marc Dequecker, qui pilotent les pôles intégration, cloud logiciel et partenariats B2B avec une rigueur absolue.
                                 </p>
                             </div>
@@ -104,7 +104,7 @@ export function About() {
 
                 {/* Le CTA CRO qui manquait */}
                 <FadeIn delay={0.5} direction="up" className="mt-24 text-center">
-                    <h3 className="text-2xl font-bold text-white mb-8">Prêt à sécuriser vos infrastructures avec nos experts ?</h3>
+                    <h3 className="text-2xl font-bold text-white mb-8 text-balance">Prêt à sécuriser vos infrastructures avec nos experts ?</h3>
                     <Link
                         to="/contact"
                         className="group/btn inline-flex items-center justify-center rounded-lg bg-safefull-orange px-10 py-5 text-lg font-extrabold tracking-wide text-deep-dark shadow-[0_0_20px_rgba(255,107,0,0.2)] transition-all duration-300 hover:bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"

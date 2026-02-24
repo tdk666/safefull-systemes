@@ -7,6 +7,7 @@ import { NephroCall } from './pages/solutions/NephroCall';
 import { Sante } from './pages/secteurs/Sante';
 import { Industrie } from './pages/secteurs/Industrie';
 import { Contact } from './pages/Contact';
+import { References } from './pages/References';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/solutions/nephrocall" element={<NephroCall />} />
             <Route path="/secteurs/sante" element={<Sante />} />
             <Route path="/secteurs/industrie" element={<Industrie />} />
+            <Route path="/references" element={<References />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

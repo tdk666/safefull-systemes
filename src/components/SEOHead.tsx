@@ -35,19 +35,43 @@ export function SEOHead({ title, description, canonicalUrl, jsonLd }: SEOHeadPro
         }
         canonicalLink.setAttribute('href', canonicalUrl);
 
-        // 4. Injection du JSON-LD pour le GEO
-        let scriptJsonLd = document.querySelector('script[id="seo-jsonld"]');
-        if (jsonLd) {
-            if (!scriptJsonLd) {
-                scriptJsonLd = document.createElement('script');
-                scriptJsonLd.setAttribute('type', 'application/ld+json');
-                scriptJsonLd.setAttribute('id', 'seo-jsonld');
-                document.head.appendChild(scriptJsonLd);
+        // 4. Injection du JSON-LD pour le GEO (Authority & Silo)
+        const organizationSchema = {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Safefull Systems",
+            "url": "https://safefull-systemes.netlify.app/",
+            "logo": "https://safefull-systemes.netlify.app/logoSAFEFULL.png",
+            "description": "Leader de la sécurité communicante B2B. Audits et architectures de cybersécurité pour les systèmes d'alarmes (PTI/DATI, NephroCall).",
+            "founder": {
+                "@type": "Person",
+                "name": "Marc Dequecker"
             }
-            scriptJsonLd.textContent = JSON.stringify(jsonLd);
-        } else if (scriptJsonLd) {
-            scriptJsonLd.remove();
+        };
+
+        const serviceSchema = {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Audit Cybersécurité B2B & Supervision d'Alarmes",
+            "provider": {
+                "@type": "Organization",
+                "name": "Safefull Systems"
+            },
+            "areaServed": "France"
+        };
+
+        const finalJsonLd = jsonLd ?
+            (Array.isArray(jsonLd) ? [organizationSchema, serviceSchema, ...jsonLd] : [organizationSchema, serviceSchema, jsonLd])
+            : [organizationSchema, serviceSchema];
+
+        let scriptJsonLd = document.querySelector('script[id="seo-jsonld"]');
+        if (!scriptJsonLd) {
+            scriptJsonLd = document.createElement('script');
+            scriptJsonLd.setAttribute('type', 'application/ld+json');
+            scriptJsonLd.setAttribute('id', 'seo-jsonld');
+            document.head.appendChild(scriptJsonLd);
         }
+        scriptJsonLd.textContent = JSON.stringify(finalJsonLd);
 
         // Cleanup partiel si le composant est démonté de manière non-SPA (rare, mais bonne pratique)
         return () => {

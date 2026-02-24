@@ -6,7 +6,15 @@ export function Hero() {
     return (
         <section className="relative overflow-hidden bg-deep-dark border-b border-white/10">
 
-            {/* Background Matrix/Neon effect */}
+            {/* Background Matrix/Neon effect (LCP Optimization via fetchPriority) */}
+            <img
+                src="/matrix-bg.png"
+                alt="Architecture Cybersécurité Safefull Systems"
+                fetchPriority="high"
+                decoding="sync"
+                loading="eager"
+                className="absolute inset-0 w-full h-full object-cover opacity-5 mix-blend-overlay pointer-events-none"
+            />
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
             <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-safefull-orange/20 opacity-20 blur-[100px]"></div>
             <div className="absolute right-0 bottom-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-safefull-slate/20 opacity-20 blur-[100px]"></div>
@@ -41,16 +49,22 @@ export function Hero() {
                             to="/solutions/mobeeweb"
                             className="group relative inline-flex items-center justify-center rounded-sm bg-safefull-orange px-8 py-3.5 text-base font-bold text-deep-dark transition-all duration-300 hover:bg-white hover:shadow-orange-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-orange focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark"
                         >
-                            Découvrir MobeeWeb PTI
-                            <LocateFixed className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                            <span className="sr-only">Demander un audit de cybersécurité complet et découvrir l'architecture PTI MobeeWeb pour la protection des travailleurs</span>
+                            <span aria-hidden="true" className="flex items-center">
+                                Découvrir MobeeWeb PTI
+                                <LocateFixed className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                            </span>
                         </Link>
 
                         <Link
                             to="/solutions/nephrocall"
                             className="group relative inline-flex items-center justify-center rounded-sm border border-safefull-slate/40 bg-safefull-slate/5 px-8 py-3.5 text-base font-bold text-safefull-slate transition-all duration-300 hover:bg-safefull-slate hover:text-deep-dark hover:shadow-glass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-slate focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark"
                         >
-                            Où explorer NephroCall
-                            <Activity className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+                            <span className="sr-only">Explorer nos solutions de supervision médicale d'alarmes hétérogènes NephroCall pour cliniques et hôpitaux</span>
+                            <span aria-hidden="true" className="flex items-center">
+                                Où explorer NephroCall
+                                <Activity className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+                            </span>
                         </Link>
                     </FadeIn>
                 </div>

@@ -13,6 +13,7 @@ const industryEnum = [
 ] as const;
 
 const leadSchema = z.object({
+    honeypot: z.string().optional(),
     company_name: z.string().min(2, "Le nom de l'entreprise doit contenir au moins 2 caractères"),
     contact_name: z.string().min(2, "Le nom du contact est requis"),
     email: z.string().email("Veuillez entrer une adresse email valide"),
@@ -46,6 +47,16 @@ export function LeadForm() {
 
     const onSubmit = async (data: LeadFormValues) => {
         setSubmitError(null);
+
+        // THE CHOPPIN CONVERSION : Honeypot Strategy
+        // Si un bot remplit ce champ invisible, on arrête tout silencieusement
+        if (data.honeypot && data.honeypot.trim() !== '') {
+            console.info('Sécurité: Soumission traitée (Silently discarded due to honeypot)');
+            setIsSuccess(true);
+            reset();
+            return;
+        }
+
         try {
             const { error } = await supabase.from('leads').insert([
                 {
@@ -83,7 +94,18 @@ export function LeadForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 relative">
+            {/* Honeypot Field - Invisible for humans, tempting for bots */}
+            <input
+                type="text"
+                {...register('honeypot')}
+                tabIndex={-1}
+                aria-hidden="true"
+                className="opacity-0 absolute -z-50 h-0 w-0"
+                autoComplete="off"
+                placeholder="Laissez ce champ vide"
+            />
+
             {submitError && (
                 <div className="rounded-none border border-red-500/30 bg-red-500/5 p-4 text-red-500 text-sm">
                     {submitError}

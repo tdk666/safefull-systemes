@@ -107,20 +107,34 @@ export function NephroCall() {
                             <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
                                 NephroCall est fourni sous forme de package clef en main, télé-paramétrable 24/7 par nos ingénieurs SafeFull Systems : Serveur applicatif, Boîtiers IoT IP, et passerelle GSM.
                             </p>
-                            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <div className="flex flex-wrap items-center justify-center gap-4">
                                 <Link
                                     to="/contact"
-                                    className="inline-flex items-center justify-center gap-3 border border-matrix-green bg-matrix-green px-8 py-4 text-base font-bold text-deep-dark transition-all hover:bg-matrix-green/80 hover:gap-5"
+                                    className="inline-flex items-center justify-center gap-3 border border-matrix-green bg-matrix-green px-8 py-4 text-sm font-bold text-deep-dark transition-all hover:bg-matrix-green/80 hover:gap-4"
                                 >
                                     Demandez un audit métier
-                                    <ArrowRight className="h-5 w-5" />
+                                    <ArrowRight className="h-4 w-4" />
                                 </Link>
                                 <a
                                     href="/downloads/nephrocall-presentation.pptx"
                                     download
-                                    className="inline-flex items-center justify-center gap-3 border border-white/20 bg-transparent px-8 py-4 text-base font-bold text-white transition-all hover:bg-white/5 hover:border-white/40"
+                                    className="inline-flex items-center justify-center gap-2 border border-white/20 bg-transparent px-6 py-4 text-sm font-bold text-white transition-all hover:bg-white/5 hover:border-white/40"
                                 >
-                                    Télécharger la Présentation (PPT)
+                                    Présentation (PPTX)
+                                </a>
+                                <a
+                                    href="/downloads/Vignette1_NephroCall.pptx"
+                                    download
+                                    className="inline-flex items-center justify-center gap-2 border border-white/20 bg-transparent px-6 py-4 text-sm font-bold text-white transition-all hover:bg-white/5 hover:border-white/40"
+                                >
+                                    Vignette 1 (PPTX)
+                                </a>
+                                <a
+                                    href="/downloads/Vignette2_NephroCall.pptx"
+                                    download
+                                    className="inline-flex items-center justify-center gap-2 border border-white/20 bg-transparent px-6 py-4 text-sm font-bold text-white transition-all hover:bg-white/5 hover:border-white/40"
+                                >
+                                    Vignette 2 (PPTX)
                                 </a>
                             </div>
                         </div>

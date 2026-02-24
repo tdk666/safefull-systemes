@@ -104,29 +104,43 @@ export function MobeeWeb() {
                             <p className="text-lg text-gray-300 mb-10 max-w-2xl mx-auto">
                                 Des usines chimiques aux plateformes logistiques, MobeeWeb adapte ses algorithmes de détection DATI et sa cartographie GPS/BLE à vos infrastructures.
                             </p>
-                            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <div className="flex flex-wrap items-center justify-center gap-4">
                                 <Link
                                     to="/contact"
-                                    className="inline-flex items-center justify-center gap-3 border border-neon-blue bg-neon-blue px-8 py-4 text-base font-bold text-deep-dark transition-all hover:bg-neon-blue/80 hover:gap-5"
+                                    className="inline-flex items-center justify-center gap-3 border border-neon-blue bg-neon-blue px-8 py-4 text-sm font-bold text-deep-dark transition-all hover:bg-neon-blue/80 hover:gap-4"
                                 >
                                     Sécurisez vos équipes
-                                    <ArrowRight className="h-5 w-5" />
+                                    <ArrowRight className="h-4 w-4" />
                                 </Link>
                                 <a
                                     href="/downloads/mobeeweb-synthese.pdf"
                                     download
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="inline-flex items-center justify-center gap-3 border border-white/20 bg-transparent px-8 py-4 text-base font-bold text-white transition-all hover:bg-white/5 hover:border-white/40"
+                                    className="inline-flex items-center justify-center gap-2 border border-white/20 bg-transparent px-6 py-4 text-sm font-bold text-white transition-all hover:bg-white/5 hover:border-white/40"
                                 >
-                                    Fiche Synthèse (PDF)
+                                    Fiche (PDF)
                                 </a>
                                 <a
                                     href="/downloads/mobeeweb-isafe.ppt"
                                     download
-                                    className="inline-flex items-center justify-center gap-3 border border-white/20 bg-transparent px-8 py-4 text-base font-bold text-white transition-all hover:bg-white/5 hover:border-white/40"
+                                    className="inline-flex items-center justify-center gap-2 border border-white/20 bg-transparent px-6 py-4 text-sm font-bold text-white transition-all hover:bg-white/5 hover:border-white/40"
                                 >
-                                    Présentation Complète (PPT)
+                                    Présentation (PPT)
+                                </a>
+                                <a
+                                    href="/downloads/Vignette1_MobeeWeb.pptx"
+                                    download
+                                    className="inline-flex items-center justify-center gap-2 border border-white/20 bg-transparent px-6 py-4 text-sm font-bold text-white transition-all hover:bg-white/5 hover:border-white/40"
+                                >
+                                    Vignette 1 (PPTX)
+                                </a>
+                                <a
+                                    href="/downloads/Vignette2_MobeeWeb.pptx"
+                                    download
+                                    className="inline-flex items-center justify-center gap-2 border border-white/20 bg-transparent px-6 py-4 text-sm font-bold text-white transition-all hover:bg-white/5 hover:border-white/40"
+                                >
+                                    Vignette 2 (PPTX)
                                 </a>
                             </div>
                         </div>

@@ -19,7 +19,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="flex min-h-screen flex-col bg-deep-dark text-white font-sans selection:bg-neon-blue selection:text-deep-dark">
+      <div className="flex min-h-screen flex-col bg-deep-dark text-white font-sans selection:bg-safefull-orange selection:text-deep-dark">
         <Navbar />
         <main className="flex-1">
           <Routes>

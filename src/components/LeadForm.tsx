@@ -70,8 +70,8 @@ export function LeadForm() {
     if (isSuccess) {
         return (
             <FadeIn>
-                <div className="rounded-none border border-matrix-green/30 bg-matrix-green/5 p-8 text-center backdrop-blur-sm">
-                    <ShieldCheck className="mx-auto h-12 w-12 text-matrix-green mb-4" />
+                <div className="rounded-none border border-safefull-slate/30 bg-safefull-slate/5 p-8 text-center backdrop-blur-sm">
+                    <ShieldCheck className="mx-auto h-12 w-12 text-safefull-slate mb-4" />
                     <h3 className="text-xl font-bold text-white mb-2">Demande reçue avec succès</h3>
                     <p className="text-gray-300">
                         Notre équipe d'experts prendra contact avec vous dans les plus brefs délais pour
@@ -100,7 +100,7 @@ export function LeadForm() {
                         type="text"
                         {...register('company_name')}
                         aria-invalid={errors.company_name ? "true" : "false"}
-                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-neon-blue focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-neon-blue/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
+                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-safefull-orange focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-safefull-orange/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
                         placeholder="Nom de votre structure"
                     />
                     {errors.company_name && (
@@ -119,7 +119,7 @@ export function LeadForm() {
                         type="text"
                         {...register('contact_name')}
                         aria-invalid={errors.contact_name ? "true" : "false"}
-                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-neon-blue focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-neon-blue/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
+                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-safefull-orange focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-safefull-orange/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
                         placeholder="Votre nom complet"
                     />
                     {errors.contact_name && (
@@ -140,7 +140,7 @@ export function LeadForm() {
                         type="email"
                         {...register('email')}
                         aria-invalid={errors.email ? "true" : "false"}
-                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-neon-blue focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-neon-blue/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
+                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-safefull-orange focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-safefull-orange/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
                         placeholder="vous@entreprise.com"
                     />
                     {errors.email && (
@@ -158,7 +158,7 @@ export function LeadForm() {
                         id="industry"
                         {...register('industry')}
                         aria-invalid={errors.industry ? "true" : "false"}
-                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-neon-blue focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-neon-blue/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
+                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-safefull-orange focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-safefull-orange/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
                     >
                         <option value="">Sélectionnez un secteur...</option>
                         {industryEnum.map((industry) => (
@@ -184,7 +184,7 @@ export function LeadForm() {
                     rows={4}
                     {...register('message')}
                     aria-invalid={errors.message ? "true" : "false"}
-                    className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-neon-blue focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-neon-blue/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
+                    className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-safefull-orange focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-safefull-orange/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
                     placeholder="Décrivez brièvement le contexte de votre demande (PTI, alarmes hospitalières, etc.)."
                 />
                 {errors.message && (
@@ -195,19 +195,19 @@ export function LeadForm() {
             </div>
 
             <div className="space-y-4">
-                <div className="flex items-start rounded-sm border border-white/5 bg-deep-dark p-4 transition-colors focus-within:border-neon-blue/30">
+                <div className="flex items-start rounded-sm border border-white/5 bg-deep-dark p-4 transition-colors focus-within:border-safefull-orange/30">
                     <div className="flex h-5 items-center">
                         <input
                             id="rgpd_consent"
                             type="checkbox"
                             {...register('rgpd_consent')}
                             aria-invalid={errors.rgpd_consent ? "true" : "false"}
-                            className="h-4 w-4 rounded-sm border-gray-800 bg-dark-surface text-neon-blue transition-colors focus:ring-2 focus:ring-neon-blue focus:ring-offset-2 focus:ring-offset-deep-dark aria-[invalid=true]:border-amber-500"
+                            className="h-4 w-4 rounded-sm border-gray-800 bg-dark-surface text-safefull-orange transition-colors focus:ring-2 focus:ring-safefull-orange focus:ring-offset-2 focus:ring-offset-deep-dark aria-[invalid=true]:border-amber-500"
                         />
                     </div>
                     <div className="ml-3 text-sm">
                         <label htmlFor="rgpd_consent" className="font-medium text-gray-300">
-                            J'ai lu et j'accepte la <a href="/politique-confidentialite" target="_blank" rel="noopener noreferrer" className="text-neon-blue hover:underline">Politique de Confidentialité</a>.
+                            J'ai lu et j'accepte la <a href="/politique-confidentialite" target="_blank" rel="noopener noreferrer" className="text-safefull-orange hover:underline">Politique de Confidentialité</a>.
                         </label>
                         {errors.rgpd_consent && (
                             <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
@@ -221,7 +221,7 @@ export function LeadForm() {
                     type="submit"
                     disabled={isSubmitting}
                     aria-busy={isSubmitting}
-                    className="group relative flex w-full items-center justify-center rounded-sm bg-neon-blue px-8 py-4 text-base font-bold tracking-wide text-deep-dark transition-all duration-300 hover:bg-white hover:shadow-neon focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark disabled:pointer-events-none disabled:bg-white/10 disabled:text-white/30"
+                    className="group relative flex w-full items-center justify-center rounded-sm bg-safefull-orange px-8 py-4 text-base font-bold tracking-wide text-deep-dark transition-all duration-300 hover:bg-white hover:shadow-orange-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark disabled:pointer-events-none disabled:bg-white/10 disabled:text-white/30"
                 >
                     {isSubmitting ? (
                         <>
@@ -233,9 +233,9 @@ export function LeadForm() {
                     )}
                 </button>
                 <div className="mt-6 flex items-start gap-3 border-t border-white/10 pt-4">
-                    <ShieldCheck className="h-5 w-5 flex-shrink-0 text-matrix-green" />
+                    <ShieldCheck className="h-5 w-5 flex-shrink-0 text-safefull-slate" />
                     <p className="text-xs leading-relaxed text-gray-500">
-                        En soumettant ce formulaire, j'accepte que les informations saisies soient traitées dans le strict cadre de ma demande. Pour connaître et exercer vos droits, notamment d'accès, de rectification ou de retrait de votre consentement, veuillez consulter notre <a href="/politique-confidentialite" target="_blank" rel="noopener noreferrer" className="text-neon-blue hover:underline">Politique de Confidentialité</a>. Vos données sont chiffrées de bout en bout et ne sont jamais partagées à des tiers.
+                        En soumettant ce formulaire, j'accepte que les informations saisies soient traitées dans le strict cadre de ma demande. Pour connaître et exercer vos droits, notamment d'accès, de rectification ou de retrait de votre consentement, veuillez consulter notre <a href="/politique-confidentialite" target="_blank" rel="noopener noreferrer" className="text-safefull-orange hover:underline">Politique de Confidentialité</a>. Vos données sont chiffrées de bout en bout et ne sont jamais partagées à des tiers.
                     </p>
                 </div>
             </div>

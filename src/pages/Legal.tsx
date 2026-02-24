@@ -15,7 +15,7 @@ export function Legal() {
             <div className="relative mx-auto max-w-4xl px-6 lg:px-8 pt-24 sm:pt-32">
                 <FadeIn direction="up">
                     <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-5xl mb-12">
-                        Mentions <span className="text-matrix-green">Légales</span>
+                        Mentions <span className="text-safefull-slate">Légales</span>
                     </h1>
                 </FadeIn>
 
@@ -24,10 +24,10 @@ export function Legal() {
                         <section className="rounded-none border border-white/5 bg-dark-surface/50 p-8">
                             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-800 pb-4">1. Éditeur du Site</h2>
                             <div className="space-y-4 text-gray-300">
-                                <p><strong className="text-neon-blue">Société :</strong> SAFEFULL SYSTEMS</p>
-                                <p><strong className="text-neon-blue">Forme Juridique :</strong> SARL (Société à Responsabilité Limitée)</p>
-                                <p><strong className="text-neon-blue">Capital Social :</strong> 21 000,00 €</p>
-                                <p><strong className="text-neon-blue">Siège Social :</strong> 2480 ROUTE DE CAUDEBEC, 76940 VATTEVILLE-LA-RUE, France</p>
+                                <p><strong className="text-safefull-orange">Société :</strong> SAFEFULL SYSTEMS</p>
+                                <p><strong className="text-safefull-orange">Forme Juridique :</strong> SARL (Société à Responsabilité Limitée)</p>
+                                <p><strong className="text-safefull-orange">Capital Social :</strong> 21 000,00 €</p>
+                                <p><strong className="text-safefull-orange">Siège Social :</strong> 2480 ROUTE DE CAUDEBEC, 76940 VATTEVILLE-LA-RUE, France</p>
                             </div>
                         </section>
                     </FadeIn>
@@ -36,12 +36,12 @@ export function Legal() {
                         <section className="rounded-none border border-white/5 bg-dark-surface/50 p-8">
                             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-800 pb-4">2. Informations Légales</h2>
                             <div className="space-y-4 text-gray-300">
-                                <p><strong className="text-neon-blue">SIREN :</strong> 519 056 063</p>
-                                <p><strong className="text-neon-blue">SIRET (siège) :</strong> 519 056 063 00018</p>
-                                <p><strong className="text-neon-blue">Numéro de TVA Intracommunautaire :</strong> FR41519056063</p>
-                                <p><strong className="text-neon-blue">Registre du Commerce (RCS) :</strong> 519 056 063 R.C.S. Rouen</p>
-                                <p><strong className="text-neon-blue">Date de création :</strong> 01/12/2009</p>
-                                <p><strong className="text-neon-blue">Activité Principale (NAF/APE) :</strong> 58.29C (Édition de logiciels applicatifs)</p>
+                                <p><strong className="text-safefull-orange">SIREN :</strong> 519 056 063</p>
+                                <p><strong className="text-safefull-orange">SIRET (siège) :</strong> 519 056 063 00018</p>
+                                <p><strong className="text-safefull-orange">Numéro de TVA Intracommunautaire :</strong> FR41519056063</p>
+                                <p><strong className="text-safefull-orange">Registre du Commerce (RCS) :</strong> 519 056 063 R.C.S. Rouen</p>
+                                <p><strong className="text-safefull-orange">Date de création :</strong> 01/12/2009</p>
+                                <p><strong className="text-safefull-orange">Activité Principale (NAF/APE) :</strong> 58.29C (Édition de logiciels applicatifs)</p>
                             </div>
                         </section>
                     </FadeIn>
@@ -64,7 +64,7 @@ export function Legal() {
                             <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-800 pb-4">4. Hébergement</h2>
                             <div className="space-y-4 text-gray-300">
                                 <p>Ce site web est hébergé par :</p>
-                                <p><strong className="text-neon-blue">Netlify, Inc.</strong></p>
+                                <p><strong className="text-safefull-orange">Netlify, Inc.</strong></p>
                                 <p>44 Montgomery Street, Suite 300<br />San Francisco, California 94104<br />États-Unis</p>
                             </div>
                         </section>

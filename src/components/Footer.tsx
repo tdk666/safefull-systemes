@@ -11,7 +11,7 @@ export function Footer() {
                 <div className="grid grid-cols-1 gap-12 md:grid-cols-12 mb-16">
                     {/* Colonne Marque (plus large) */}
                     <div className="space-y-6 md:col-span-4">
-                        <Link to="/" className="inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue rounded-sm">
+                        <Link to="/" className="inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-orange rounded-sm">
                             {/* Utilise le même logo que la Navbar pour une cohérence absolue */}
                             <img src="/logoSAFEFULL.png" alt="Safefull Systems" className="h-10 w-auto object-contain opacity-90 transition-opacity hover:opacity-100" />
                         </Link>
@@ -25,12 +25,12 @@ export function Footer() {
                         <h3 className="mb-5 text-xs font-bold uppercase tracking-[0.2em] text-white">Technologie</h3>
                         <ul className="space-y-3 text-sm">
                             <li>
-                                <Link to="/solutions/mobeeweb" className="group flex items-center transition-colors hover:text-neon-blue">
+                                <Link to="/solutions/mobeeweb" className="group flex items-center transition-colors hover:text-safefull-orange">
                                     MobeeWeb PTI <ArrowUpRight className="ml-1 h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/solutions/nephrocall" className="group flex items-center transition-colors hover:text-matrix-green">
+                                <Link to="/solutions/nephrocall" className="group flex items-center transition-colors hover:text-safefull-slate">
                                     NephroCall <ArrowUpRight className="ml-1 h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                                 </Link>
                             </li>
@@ -58,8 +58,8 @@ export function Footer() {
                         <ul className="space-y-4 text-sm">
                             <li className="flex flex-col">
                                 <span className="text-xs text-gray-500 mb-1">Directeur Commercial</span>
-                                <a href="tel:+33662149024" className="group inline-flex items-center text-white transition-colors hover:text-neon-blue">
-                                    <Phone className="mr-2 h-4 w-4 text-gray-500 group-hover:text-neon-blue transition-colors" />
+                                <a href="tel:+33662149024" className="group inline-flex items-center text-white transition-colors hover:text-safefull-orange">
+                                    <Phone className="mr-2 h-4 w-4 text-gray-500 group-hover:text-safefull-orange transition-colors" />
                                     <span className="font-mono tracking-wider">06 62 14 90 24</span>
                                 </a>
                             </li>

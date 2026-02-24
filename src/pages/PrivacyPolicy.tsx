@@ -15,7 +15,7 @@ export function PrivacyPolicy() {
             <div className="relative mx-auto max-w-4xl px-6 lg:px-8 pt-24 sm:pt-32">
                 <FadeIn direction="up">
                     <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-5xl mb-12">
-                        Politique de <span className="text-matrix-green">Confidentialité</span>
+                        Politique de <span className="text-safefull-slate">Confidentialité</span>
                     </h1>
                 </FadeIn>
 
@@ -70,7 +70,7 @@ export function PrivacyPolicy() {
                                 </p>
                                 <p>
                                     Délégué à la Protection des Données (DPO) :<br />
-                                    <strong className="text-neon-blue">Marc Dequecker</strong><br />
+                                    <strong className="text-safefull-orange">Marc Dequecker</strong><br />
                                     Contact : <a href="mailto:marc.dequecker@safefull.com" className="hover:text-white underline">marc.dequecker@safefull.com</a>
                                 </p>
                             </div>

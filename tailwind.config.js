@@ -8,8 +8,8 @@ export default {
     theme: {
         extend: {
             colors: {
-                'neon-blue': '#00d2ff',
-                'matrix-green': '#00ff41',
+                'safefull-orange': '#F26122', // Orange sécurité corporate
+                'safefull-slate': '#757C88',  // Gris B2B Tech
                 'deep-dark': '#0a0a0a',
                 'dark-surface': '#121212',
             },
@@ -18,8 +18,8 @@ export default {
                 mono: ['Space Mono', 'monospace'],
             },
             boxShadow: {
-                'neon': '0 0 15px -3px rgba(0, 210, 255, 0.4)',
-                'matrix': '0 0 15px -3px rgba(0, 255, 65, 0.4)',
+                'orange-glow': '0 0 15px -3px rgba(242, 97, 34, 0.4)',
+                'slate-glow': '0 0 15px -3px rgba(117, 124, 136, 0.4)',
                 'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
             },
             backgroundImage: {

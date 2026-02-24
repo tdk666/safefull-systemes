@@ -19,7 +19,7 @@ export function Navbar() {
         <nav className="sticky top-0 z-50 w-full border-b border-white/5 bg-deep-dark/70 backdrop-blur-xl transition-all duration-300">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-20 items-center justify-between">
-                    <Link to="/" className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue rounded-sm">
+                    <Link to="/" className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-orange rounded-sm">
                         <img src="/logoSAFEFULL.png" alt="Safefull Systems" className="h-8 w-auto object-contain drop-shadow-[0_0_8px_rgba(0,210,255,0.3)]" />
                     </Link>
 
@@ -29,19 +29,19 @@ export function Navbar() {
                             <Link
                                 key={link.path}
                                 to={link.path}
-                                className={`relative text-sm font-medium transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue rounded-sm px-2 py-1 ${location.pathname === link.path ? 'text-white' : 'text-gray-400'
+                                className={`relative text-sm font-medium transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-orange rounded-sm px-2 py-1 ${location.pathname === link.path ? 'text-white' : 'text-gray-400'
                                     }`}
                             >
                                 {link.name}
                                 {location.pathname === link.path && (
-                                    <motion.div layoutId="nav-indicator" className="absolute -bottom-2 left-0 right-0 h-0.5 bg-neon-blue shadow-neon" />
+                                    <motion.div layoutId="nav-indicator" className="absolute -bottom-2 left-0 right-0 h-0.5 bg-safefull-orange shadow-orange-glow" />
                                 )}
                             </Link>
                         ))}
                         {/* PRIMARY CTA CLONED */}
                         <Link
                             to="/contact"
-                            className="group relative inline-flex items-center justify-center rounded-sm bg-neon-blue px-6 py-2.5 text-sm font-bold text-deep-dark transition-all duration-300 hover:bg-white hover:shadow-neon focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark"
+                            className="group relative inline-flex items-center justify-center rounded-sm bg-safefull-orange px-6 py-2.5 text-sm font-bold text-deep-dark transition-all duration-300 hover:bg-white hover:shadow-orange-glow focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-orange focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark"
                         >
                             <ShieldAlert className="mr-2 h-4 w-4" />
                             Audit Sécurité
@@ -52,7 +52,7 @@ export function Navbar() {
                     <div className="flex items-center md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="p-2 text-gray-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue rounded-sm"
+                            className="p-2 text-gray-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-orange rounded-sm"
                             aria-expanded={isOpen}
                             aria-label="Toggle navigation menu"
                         >
@@ -78,7 +78,7 @@ export function Navbar() {
                                     key={link.path}
                                     to={link.path}
                                     onClick={() => setIsOpen(false)}
-                                    className={`rounded-sm px-4 py-3 text-base font-medium transition-colors ${location.pathname === link.path ? 'bg-white/5 text-neon-blue border-l-2 border-neon-blue' : 'text-gray-400 hover:bg-white/5 hover:text-white'
+                                    className={`rounded-sm px-4 py-3 text-base font-medium transition-colors ${location.pathname === link.path ? 'bg-white/5 text-safefull-orange border-l-2 border-safefull-orange' : 'text-gray-400 hover:bg-white/5 hover:text-white'
                                         }`}
                                 >
                                     {link.name}
@@ -88,7 +88,7 @@ export function Navbar() {
                                 <Link
                                     to="/contact"
                                     onClick={() => setIsOpen(false)}
-                                    className="flex w-full items-center justify-center rounded-sm bg-neon-blue px-4 py-3 font-bold text-deep-dark shadow-neon transition-colors hover:bg-white"
+                                    className="flex w-full items-center justify-center rounded-sm bg-safefull-orange px-4 py-3 font-bold text-deep-dark shadow-orange-glow transition-colors hover:bg-white"
                                 >
                                     Demander un Audit
                                 </Link>

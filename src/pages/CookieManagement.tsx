@@ -15,7 +15,7 @@ export function CookieManagement() {
             <div className="relative mx-auto max-w-4xl px-6 lg:px-8 pt-24 sm:pt-32">
                 <FadeIn direction="up">
                     <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-5xl mb-12">
-                        Gestion des <span className="text-matrix-green">Cookies</span>
+                        Gestion des <span className="text-safefull-slate">Cookies</span>
                     </h1>
                 </FadeIn>
 

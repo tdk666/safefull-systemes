@@ -26,9 +26,9 @@ export function References() {
             <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pt-24 sm:pt-32">
                 <div className="mx-auto max-w-3xl text-center">
                     <FadeIn direction="up">
-                        <h2 className="text-sm font-bold tracking-widest text-matrix-green uppercase">La Preuve Sociale Absolue</h2>
+                        <h2 className="text-sm font-bold tracking-widest text-safefull-slate uppercase">La Preuve Sociale Absolue</h2>
                         <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
-                            Ils s'appuient sur notre <span className="text-transparent bg-clip-text bg-gradient-to-r from-matrix-green to-neon-blue">Résilience</span>
+                            Ils s'appuient sur notre <span className="text-transparent bg-clip-text bg-gradient-to-r from-safefull-slate to-safefull-orange">Résilience</span>
                         </h1>
                         <p className="mt-6 text-xl leading-8 text-gray-400 font-medium">
                             Depuis des années, SafeFull Systems sécurise les infrastructures les plus exigeantes de France. Du pôle nucléaire aux chaînes d'assemblage aéronautiques, l'erreur n'est pas une option.
@@ -52,7 +52,7 @@ export function References() {
                         <img src="/logos/lu-logo.png" alt="LU" className="h-16 w-auto object-contain opacity-70 grayscale transition-all duration-300 hover:grayscale-0 hover:opacity-100" />
                     </div>
                     <div className="mt-8 flex items-center justify-center gap-3">
-                        <Trophy className="h-8 w-8 text-matrix-green" />
+                        <Trophy className="h-8 w-8 text-safefull-slate" />
                         <span className="text-2xl font-bold text-white tracking-wide">Excellence Industrielle & Médicale</span>
                     </div>
                 </FadeIn>
@@ -65,8 +65,8 @@ export function References() {
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-min">
                         {references.map((ref, index) => (
                             <FadeIn key={ref} delay={0.1 + (index * 0.05)} direction="up" className="h-full">
-                                <div className="group flex items-center gap-3 h-full rounded-none border border-white/5 bg-white/5 p-4 transition-all hover:border-neon-blue/40 hover:bg-white/10">
-                                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-matrix-green group-hover:text-neon-blue transition-colors" />
+                                <div className="group flex items-center gap-3 h-full rounded-none border border-white/5 bg-white/5 p-4 transition-all hover:border-safefull-orange/40 hover:bg-white/10">
+                                    <CheckCircle2 className="h-5 w-5 flex-shrink-0 text-safefull-slate group-hover:text-safefull-orange transition-colors" />
                                     <span className="text-sm font-semibold text-gray-300 group-hover:text-white transition-colors">{ref}</span>
                                 </div>
                             </FadeIn>

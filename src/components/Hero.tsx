@@ -46,10 +46,10 @@ export function Hero() {
 
                         <Link
                             to="/solutions/nephrocall"
-                            className="group inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-gray-400 transition-colors duration-200 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark"
+                            className="group relative inline-flex items-center justify-center rounded-sm border border-matrix-green/40 bg-matrix-green/5 px-8 py-3.5 text-base font-bold text-matrix-green transition-all duration-300 hover:bg-matrix-green hover:text-deep-dark hover:shadow-glass focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-matrix-green focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark"
                         >
-                            Ou explorer NephroCall
-                            <Activity className="ml-2 h-4 w-4 opacity-50 transition-opacity group-hover:opacity-100" />
+                            Où explorer NephroCall
+                            <Activity className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                         </Link>
                     </FadeIn>
                 </div>

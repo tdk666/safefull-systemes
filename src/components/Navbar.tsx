@@ -1,6 +1,7 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Menu, X, ShieldAlert } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,11 +16,11 @@ export function Navbar() {
     ];
 
     return (
-        <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-deep-dark/80 backdrop-blur-md">
+        <nav className="sticky top-0 z-50 w-full border-b border-white/5 bg-deep-dark/70 backdrop-blur-xl transition-all duration-300">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex h-16 items-center justify-between">
-                    <Link to="/" className="flex items-center gap-2">
-                        <img src="/logoSAFEFULL.png" alt="Safefull Systems Logo" className="h-10 w-auto object-contain" />
+                <div className="flex h-20 items-center justify-between">
+                    <Link to="/" className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue rounded-sm">
+                        <img src="/logoSAFEFULL.png" alt="Safefull Systems" className="h-8 w-auto object-contain drop-shadow-[0_0_8px_rgba(0,210,255,0.3)]" />
                     </Link>
 
                     {/* Desktop Menu */}
@@ -28,17 +29,22 @@ export function Navbar() {
                             <Link
                                 key={link.path}
                                 to={link.path}
-                                className={`text-sm font-medium transition-colors hover:text-neon-blue ${location.pathname === link.path ? 'text-neon-blue' : 'text-gray-300'
+                                className={`relative text-sm font-medium transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue rounded-sm px-2 py-1 ${location.pathname === link.path ? 'text-white' : 'text-gray-400'
                                     }`}
                             >
                                 {link.name}
+                                {location.pathname === link.path && (
+                                    <motion.div layoutId="nav-indicator" className="absolute -bottom-2 left-0 right-0 h-0.5 bg-neon-blue shadow-neon" />
+                                )}
                             </Link>
                         ))}
+                        {/* PRIMARY CTA CLONED */}
                         <Link
                             to="/contact"
-                            className="rounded-none border border-neon-blue bg-neon-blue/10 px-4 py-2 text-sm font-semibold text-neon-blue transition-all hover:bg-neon-blue hover:text-deep-dark inline-block"
+                            className="group relative inline-flex items-center justify-center rounded-sm bg-neon-blue px-6 py-2.5 text-sm font-bold text-deep-dark transition-all duration-300 hover:bg-white hover:shadow-neon focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark"
                         >
-                            Contact
+                            <ShieldAlert className="mr-2 h-4 w-4" />
+                            Audit Sécurité
                         </Link>
                     </div>
 
@@ -46,7 +52,9 @@ export function Navbar() {
                     <div className="flex items-center md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-gray-300 hover:text-white focus:outline-none"
+                            className="p-2 text-gray-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue rounded-sm"
+                            aria-expanded={isOpen}
+                            aria-label="Toggle navigation menu"
                         >
                             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                         </button>
@@ -54,31 +62,41 @@ export function Navbar() {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
-            {isOpen && (
-                <div className="border-t border-white/10 bg-deep-dark px-4 py-4 md:hidden">
-                    <div className="flex flex-col space-y-4">
-                        {links.map((link) => (
-                            <Link
-                                key={link.path}
-                                to={link.path}
-                                onClick={() => setIsOpen(false)}
-                                className={`text-base font-medium ${location.pathname === link.path ? 'text-neon-blue' : 'text-gray-300'
-                                    }`}
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
-                        <Link
-                            to="/contact"
-                            onClick={() => setIsOpen(false)}
-                            className="w-full rounded-none border border-neon-blue bg-neon-blue/10 px-4 py-2 text-left font-semibold text-neon-blue inline-block mb-4"
-                        >
-                            Contact
-                        </Link>
-                    </div>
-                </div>
-            )}
+            {/* Mobile Menu Orchestration */}
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="overflow-hidden border-t border-white/5 bg-deep-dark/95 backdrop-blur-xl md:hidden"
+                    >
+                        <div className="flex flex-col space-y-2 px-4 py-6">
+                            {links.map((link) => (
+                                <Link
+                                    key={link.path}
+                                    to={link.path}
+                                    onClick={() => setIsOpen(false)}
+                                    className={`rounded-sm px-4 py-3 text-base font-medium transition-colors ${location.pathname === link.path ? 'bg-white/5 text-neon-blue border-l-2 border-neon-blue' : 'text-gray-400 hover:bg-white/5 hover:text-white'
+                                        }`}
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                            <div className="pt-4 pb-2">
+                                <Link
+                                    to="/contact"
+                                    onClick={() => setIsOpen(false)}
+                                    className="flex w-full items-center justify-center rounded-sm bg-neon-blue px-4 py-3 font-bold text-deep-dark shadow-neon transition-colors hover:bg-white"
+                                >
+                                    Demander un Audit
+                                </Link>
+                            </div>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </nav>
     );
 }

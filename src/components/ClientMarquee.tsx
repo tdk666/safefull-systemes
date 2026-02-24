@@ -1,11 +1,17 @@
 import type { FC } from 'react';
 
 const clients = [
-    { id: 1, name: 'Client 1', logo: '/logos/client1.png' },
-    { id: 2, name: 'Client 2', logo: '/logos/client2.png' },
-    { id: 3, name: 'Client 3', logo: '/logos/client3.png' },
-    { id: 4, name: 'Client 4', logo: '/logos/client4.png' },
-    { id: 5, name: 'Client 5', logo: '/logos/client5.png' },
+    { id: 1, name: 'Arkema', logo: '/logos/ARKEMA_logo.png' },
+    { id: 2, name: 'Borealis', logo: '/logos/Borealis_logo.svg.png' },
+    { id: 3, name: 'Chr Hansen', logo: '/logos/ChrHansen.svg.png' },
+    { id: 4, name: 'Ramsay Santé', logo: '/logos/Logo-Ramsay-Sante.png' },
+    { id: 5, name: 'Sanofi', logo: '/logos/Logo_Sanofi_(2022).png' },
+    { id: 6, name: 'Tereos', logo: '/logos/Logo_Tereos_2016.png' },
+    { id: 7, name: 'Rémy Martin', logo: '/logos/Remymartin_logo_317px.png' },
+    { id: 8, name: 'Viatris', logo: '/logos/Viatris.svg.png' },
+    { id: 9, name: 'Delpharm', logo: '/logos/logo-delpharm-300x180.png' },
+    { id: 10, name: 'LU', logo: '/logos/png-transparent-lu-logo-product-logos.png' },
+    { id: 11, name: 'Safran', logo: '/logos/safran logo.png' },
 ];
 
 export const ClientMarquee: FC = () => {

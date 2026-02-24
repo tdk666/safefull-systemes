@@ -18,24 +18,42 @@ export const ClientMarquee: FC = () => {
     return (
         <section className="w-full overflow-hidden bg-deep-dark py-16 border-y border-white/5 relative">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-10 text-center">
-                <h2 className="text-xs font-bold tracking-[0.2em] text-gray-500 uppercase">
+                <h2 className="text-xs font-bold tracking-[0.2em] text-safefull-slate uppercase">
                     Ils sécurisent leurs infrastructures avec nous
                 </h2>
             </div>
 
-            {/* Fade Edges (CSS Mask) pour une entrée/sortie subliminale */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-32 bg-gradient-to-r from-deep-dark to-transparent"></div>
-            <div className="relative flex w-full justify-center px-4">
-                <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-12 max-w-5xl mx-auto">
+            {/* Masques de fusion (Fade Edges) pour une entrée/sortie subliminale parfaite */}
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 sm:w-40 bg-gradient-to-r from-deep-dark to-transparent"></div>
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 sm:w-40 bg-gradient-to-l from-deep-dark to-transparent"></div>
+
+            {/* Container du Marquee avec pause au survol (Empathie CRO) */}
+            <div className="relative flex w-full overflow-hidden group py-4">
+
+                {/* Bandeau 1 */}
+                <div className="flex w-max animate-marquee space-x-12 sm:space-x-20 px-8 items-center justify-center group-hover:[animation-play-state:paused]">
                     {clients.map((client) => (
                         <img
-                            key={`logo-${client.id}`}
+                            key={`m1-${client.id}`}
                             src={client.logo}
                             alt={client.name}
-                            className="h-14 w-auto object-contain opacity-50 grayscale transition-all duration-300 hover:grayscale-0 hover:opacity-100 cursor-pointer"
+                            className="h-10 sm:h-14 w-auto object-contain opacity-40 grayscale transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] cursor-pointer"
                         />
                     ))}
                 </div>
+
+                {/* Bandeau 2 (Clone pour la boucle fluide) */}
+                <div className="absolute top-4 flex w-max animate-marquee2 space-x-12 sm:space-x-20 px-8 items-center justify-center group-hover:[animation-play-state:paused]">
+                    {clients.map((client) => (
+                        <img
+                            key={`m2-${client.id}`}
+                            src={client.logo}
+                            alt={client.name}
+                            className="h-10 sm:h-14 w-auto object-contain opacity-40 grayscale transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-110 hover:drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] cursor-pointer"
+                        />
+                    ))}
+                </div>
+
             </div>
         </section>
     );

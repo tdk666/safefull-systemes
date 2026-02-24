@@ -42,6 +42,10 @@ export default {
                     '0%': { transform: 'translateX(0%)' },
                     '100%': { transform: 'translateX(-100%)' },
                 },
+                marquee2: {
+                    '0%': { transform: 'translateX(100%)' },
+                    '100%': { transform: 'translateX(0%)' },
+                },
                 'marquee-loop': {
                     '0%': { transform: 'translateX(0)' },
                     '100%': { transform: 'translateX(-50%)' },
@@ -52,6 +56,7 @@ export default {
                 slideUp: 'slideUp 0.5s ease-out forwards',
                 slideInRight: 'slideInRight 0.5s ease-out forwards',
                 marquee: 'marquee 25s linear infinite',
+                marquee2: 'marquee2 25s linear infinite',
                 'marquee-loop': 'marquee-loop 50s linear infinite',
             },
         },

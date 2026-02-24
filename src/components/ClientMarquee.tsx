@@ -28,44 +28,20 @@ export const ClientMarquee: FC = () => {
             <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-32 bg-gradient-to-l from-deep-dark to-transparent"></div>
 
             <div className="relative flex w-full overflow-hidden group">
-                {/* Bandeau 1 */}
-                <div className="flex w-max animate-marquee space-x-16 px-8 items-center justify-center group-hover:[animation-play-state:paused]">
-                    {clients.map((client) => (
-                        <img
-                            key={`m1-${client.id}`}
-                            src={client.logo}
-                            alt={client.name}
-                            className="h-16 w-auto object-contain opacity-40 grayscale transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
-                        />
-                    ))}
-                    {/* On duplique le set pour être sûr de remplir l'écran même sur Ultra-Wide */}
-                    {clients.map((client) => (
-                        <img
-                            key={`m1-dup-${client.id}`}
-                            src={client.logo}
-                            alt={client.name}
-                            className="h-16 w-auto object-contain opacity-40 grayscale transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
-                        />
-                    ))}
-                </div>
-
-                {/* Bandeau 2 (Clone parfait pour la boucle) */}
-                <div className="absolute top-0 flex w-max animate-marquee2 space-x-16 px-8 items-center justify-center group-hover:[animation-play-state:paused]">
-                    {clients.map((client) => (
-                        <img
-                            key={`m2-${client.id}`}
-                            src={client.logo}
-                            alt={client.name}
-                            className="h-16 w-auto object-contain opacity-40 grayscale transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
-                        />
-                    ))}
-                    {clients.map((client) => (
-                        <img
-                            key={`m2-dup-${client.id}`}
-                            src={client.logo}
-                            alt={client.name}
-                            className="h-16 w-auto object-contain opacity-40 grayscale transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
-                        />
+                {/* Bandeau unique à défilement infini (-50%) */}
+                <div className="flex w-max animate-marquee-loop space-x-16 px-8 items-center justify-start group-hover:[animation-play-state:paused]">
+                    {/* On duplique 4 fois le tableau pour être sûr de couvrir n'importe quel écran avant les 50% de la largeur du conteneur */}
+                    {[...Array(4)].map((_, arrayIndex) => (
+                        <div key={arrayIndex} className="flex space-x-16 items-center">
+                            {clients.map((client) => (
+                                <img
+                                    key={`m-${arrayIndex}-${client.id}`}
+                                    src={client.logo}
+                                    alt={client.name}
+                                    className="h-16 w-auto object-contain opacity-40 grayscale transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:scale-110 cursor-pointer"
+                                />
+                            ))}
+                        </div>
                     ))}
                 </div>
             </div>

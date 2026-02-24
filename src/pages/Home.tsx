@@ -36,7 +36,7 @@ export function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
                         {/* Carte Santé */}
                         <FadeIn delay={0.2} direction="up" className="h-full">
-                            <Link to="/secteurs/sante" className="group block relative h-full rounded-2xl border border-white/10 bg-gradient-to-br from-safefull-slate/5 to-transparent p-10 overflow-hidden transition-all duration-500 hover:border-safefull-slate/50 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,255,65,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-slate">
+                            <Link to="/secteurs/sante" className="group block relative h-full rounded-2xl border border-white/10 bg-gradient-to-br from-safefull-slate/5 to-transparent p-10 overflow-hidden transition-all duration-500 hover:border-safefull-slate/50 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(117,124,136,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-slate">
                                 <div className="absolute inset-0 bg-safefull-slate/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                                 <div className="relative z-10 flex flex-col h-full">
                                     <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-deep-dark border border-safefull-slate/30 shadow-inner transition-transform duration-500 group-hover:scale-110">
@@ -56,7 +56,7 @@ export function Home() {
 
                         {/* Carte Industrie */}
                         <FadeIn delay={0.3} direction="up" className="h-full">
-                            <Link to="/secteurs/industrie" className="group block relative h-full rounded-2xl border border-white/10 bg-gradient-to-br from-safefull-orange/5 to-transparent p-10 overflow-hidden transition-all duration-500 hover:border-safefull-orange/50 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,210,255,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-orange">
+                            <Link to="/secteurs/industrie" className="group block relative h-full rounded-2xl border border-white/10 bg-gradient-to-br from-safefull-orange/5 to-transparent p-10 overflow-hidden transition-all duration-500 hover:border-safefull-orange/50 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(242,97,34,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-safefull-orange">
                                 <div className="absolute inset-0 bg-safefull-orange/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
                                 <div className="relative z-10 flex flex-col h-full">
                                     <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-xl bg-deep-dark border border-safefull-orange/30 shadow-inner transition-transform duration-500 group-hover:scale-110">

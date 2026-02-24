@@ -112,7 +112,7 @@ export function NephroCall() {
                             <div className="flex justify-center mb-12">
                                 <Link
                                     to="/contact"
-                                    className="group/btn relative inline-flex items-center justify-center rounded-sm bg-safefull-slate px-10 py-5 text-lg font-extrabold tracking-wide text-deep-dark shadow-[0_0_20px_rgba(0,255,65,0.4)] transition-all duration-300 hover:bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                                    className="group/btn relative inline-flex items-center justify-center rounded-sm bg-safefull-slate px-10 py-5 text-lg font-extrabold tracking-wide text-deep-dark shadow-[0_0_20px_rgba(117,124,136,0.4)] transition-all duration-300 hover:bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                                 >
                                     Organiser mon Audit Métier
                                     <ArrowRight className="ml-3 h-5 w-5 transition-transform duration-300 group-hover/btn:translate-x-2" />

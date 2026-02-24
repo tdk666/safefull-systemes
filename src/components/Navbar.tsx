@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { ShieldCheck, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 export function Navbar() {
@@ -19,10 +19,7 @@ export function Navbar() {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <Link to="/" className="flex items-center gap-2">
-                        <ShieldCheck className="h-8 w-8 text-neon-blue" />
-                        <span className="font-mono text-xl font-bold uppercase tracking-wider text-white">
-                            Safefull<span className="text-neon-blue">Sys</span>
-                        </span>
+                        <img src="/logoSAFEFULL.jpg" alt="Safefull Systems Logo" className="h-10 w-auto object-contain" />
                     </Link>
 
                     {/* Desktop Menu */}

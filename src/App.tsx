@@ -25,8 +25,8 @@ function App() {
             <Route path="/secteurs/industrie" element={<Industrie />} />
             <Route path="/references" element={<References />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/legal" element={<Legal />} />
+            <Route path="/a-propos" element={<About />} />
+            <Route path="/mentions-legales" element={<Legal />} />
           </Routes>
         </main>
         <Footer />

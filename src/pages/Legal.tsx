@@ -7,7 +7,7 @@ export function Legal() {
             <SEOHead
                 title="Mentions Légales | Safefull Systems"
                 description="Informations juridiques, propriété intellectuelle, et mentions légales obligatoires de Safefull Systems (SARL), éditeur de logiciels applicatifs B2B."
-                canonicalUrl="https://safefull-systemes.netlify.app/legal"
+                canonicalUrl="https://safefull-systemes.netlify.app/mentions-legales"
             />
 
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none h-[50vh]"></div>
@@ -61,7 +61,18 @@ export function Legal() {
 
                     <FadeIn delay={0.4} direction="up">
                         <section className="rounded-none border border-white/5 bg-dark-surface/50 p-8">
-                            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-800 pb-4">4. Propriété Intellectuelle</h2>
+                            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-800 pb-4">4. Hébergement</h2>
+                            <div className="space-y-4 text-gray-300">
+                                <p>Ce site web est hébergé par :</p>
+                                <p><strong className="text-neon-blue">Netlify, Inc.</strong></p>
+                                <p>44 Montgomery Street, Suite 300<br />San Francisco, California 94104<br />États-Unis</p>
+                            </div>
+                        </section>
+                    </FadeIn>
+
+                    <FadeIn delay={0.5} direction="up">
+                        <section className="rounded-none border border-white/5 bg-dark-surface/50 p-8">
+                            <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-800 pb-4">5. Propriété Intellectuelle</h2>
                             <div className="space-y-4 text-gray-300">
                                 <p>
                                     L'ensemble des éléments constituant ce site internet (textes, graphismes, logiciels, photographies, images, vidéos, sons, plans, noms, logos, marques, créations et œuvres protégeables diverses, bases de données, etc.) ainsi que le site lui-même, sont protégés par le droit de la Propriété Industrielle et le Droit d'auteur, et sont la propriété exclusive de SAFEFULL SYSTEMS.

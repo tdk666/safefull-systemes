@@ -8,7 +8,37 @@ export function About() {
             <SEOHead
                 title="À Propos de Safefull Systems | Notre Histoire & Notre Mission"
                 description="Découvrez l'histoire de Safefull Systems. Depuis 2009, nous accompagnons les industries critiques et les établissements de santé dans leur sécurité B2B."
-                canonicalUrl="https://safefull-systemes.netlify.app/about"
+                canonicalUrl="https://safefull-systemes.netlify.app/a-propos"
+            />
+
+            {/* JSON-LD Organization Schema for SEO/GEO */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "SAFEFULL SYSTEMS",
+                        "foundingDate": "2009-12-01",
+                        "founders": [
+                            { "@type": "Person", "name": "Dominique Cornillet" },
+                            { "@type": "Person", "name": "Marc Dequecker" }
+                        ],
+                        "address": {
+                            "@type": "PostalAddress",
+                            "streetAddress": "2480 ROUTE DE CAUDEBEC",
+                            "postalCode": "76940",
+                            "addressLocality": "VATTEVILLE-LA-RUE",
+                            "addressCountry": "FR"
+                        },
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+33-6-62-14-90-24",
+                            "contactType": "customer service",
+                            "email": "marc.dequecker@safefull.com"
+                        }
+                    })
+                }}
             />
 
             {/* Grid Tech Background */}
@@ -23,7 +53,7 @@ export function About() {
                             Sécuriser <span className="text-transparent bg-clip-text bg-gradient-to-r from-matrix-green to-neon-blue">l'Essentiel</span>
                         </h1>
                         <p className="mt-6 text-xl leading-8 text-gray-400 font-medium">
-                            Safefull Systems (anciennement Safebell) est un éditeur de logiciels B2B spécialisé dans la gestion critique des événements et systèmes d'alarmes.
+                            Depuis 2009, Safefull Systems est l'éditeur français de référence pour les logiciels et applications liés à la sécurité et aux communications (Protection des Travailleurs Isolés, Supervision médicale).
                         </p>
                     </FadeIn>
                 </div>

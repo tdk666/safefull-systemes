@@ -46,10 +46,10 @@ export function Footer() {
                         <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">La Société</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
                             <li>
-                                <Link to="/about" className="hover:text-neon-blue">À Propos</Link>
+                                <Link to="/a-propos" className="hover:text-neon-blue">À Propos</Link>
                             </li>
                             <li>
-                                <Link to="/legal" className="hover:text-white">Mentions Légales</Link>
+                                <Link to="/mentions-legales" className="hover:text-white">Mentions Légales</Link>
                             </li>
                         </ul>
                     </div>

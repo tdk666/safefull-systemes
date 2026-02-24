@@ -8,6 +8,8 @@ import { Sante } from './pages/secteurs/Sante';
 import { Industrie } from './pages/secteurs/Industrie';
 import { Contact } from './pages/Contact';
 import { References } from './pages/References';
+import { About } from './pages/About';
+import { Legal } from './pages/Legal';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path="/secteurs/industrie" element={<Industrie />} />
             <Route path="/references" element={<References />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/legal" element={<Legal />} />
           </Routes>
         </main>
         <Footer />

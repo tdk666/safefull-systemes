@@ -5,8 +5,8 @@ export function Footer() {
     return (
         <footer className="border-t border-white/10 bg-deep-dark pt-16 text-gray-300">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
-                    <div className="space-y-4">
+                <div className="grid grid-cols-1 gap-12 md:grid-cols-5">
+                    <div className="space-y-4 md:col-span-2">
                         <div className="flex items-center gap-2">
                             <ShieldCheck className="h-8 w-8 text-matrix-green" />
                             <span className="font-mono text-xl font-bold uppercase tracking-wider text-white">
@@ -43,17 +43,32 @@ export function Footer() {
                     </div>
 
                     <div>
+                        <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">La Société</h3>
+                        <ul className="space-y-2 text-sm text-gray-400">
+                            <li>
+                                <Link to="/about" className="hover:text-neon-blue">À Propos</Link>
+                            </li>
+                            <li>
+                                <Link to="/legal" className="hover:text-white">Mentions Légales</Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
                         <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">Contact</h3>
                         <ul className="space-y-2 text-sm text-gray-400">
-                            <li className="flex items-center gap-2">
-                                <Phone className="h-4 w-4 text-neon-blue" />
-                                <span>01 53 90 40 95</span>
+                            <li className="flex flex-col gap-1 mb-2">
+                                <span className="font-semibold text-white">Marc Dequecker</span>
+                                <div className="flex items-center gap-2">
+                                    <Phone className="h-4 w-4 text-neon-blue" />
+                                    <span>06 62 14 90 24</span>
+                                </div>
                             </li>
                             <li className="flex items-center gap-2">
                                 <Mail className="h-4 w-4 text-matrix-green" />
-                                <span>contact@safefull.com</span>
+                                <span>marc.dequecker@safefull.com</span>
                             </li>
-                            <li className="flex items-center gap-2">
+                            <li className="flex items-center gap-2 mt-2">
                                 <MapPin className="h-4 w-4 text-white" />
                                 <span>France</span>
                             </li>

@@ -35,40 +35,41 @@ export function Hero() {
                         </p>
                     </FadeIn>
 
-                    <FadeIn delay={0.4} direction="up" className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+                    <FadeIn delay={0.4} direction="up" className="mt-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
                         <Link
                             to="/solutions/mobeeweb"
-                            className="group relative inline-flex items-center justify-center border border-neon-blue bg-neon-blue px-8 py-3 text-base font-bold text-deep-dark transition-all hover:bg-neon-blue/90"
+                            className="group relative inline-flex items-center justify-center rounded-sm bg-neon-blue px-8 py-3.5 text-base font-bold text-deep-dark transition-all duration-300 hover:bg-white hover:shadow-neon focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neon-blue focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark"
                         >
                             Découvrir MobeeWeb PTI
-                            <LocateFixed className="ml-2 h-5 w-5 transition-transform group-hover:scale-110" />
+                            <LocateFixed className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                         </Link>
+
                         <Link
                             to="/solutions/nephrocall"
-                            className="group relative inline-flex items-center justify-center border border-matrix-green bg-transparent px-8 py-3 text-base font-bold text-matrix-green transition-all hover:bg-matrix-green/10"
+                            className="group inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-gray-400 transition-colors duration-200 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-400 focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark"
                         >
-                            Découvrir NephroCall
-                            <Activity className="ml-2 h-5 w-5 transition-transform group-hover:scale-110" />
+                            Ou explorer NephroCall
+                            <Activity className="ml-2 h-4 w-4 opacity-50 transition-opacity group-hover:opacity-100" />
                         </Link>
                     </FadeIn>
                 </div>
 
                 {/* Feature Highlights extracted from data */}
                 <FadeIn delay={0.6} direction="up" className="mx-auto mt-20 grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-3">
-                    <div className="border border-white/5 bg-white/5 p-6 backdrop-blur-sm transition-colors hover:border-neon-blue/50">
-                        <LocateFixed className="h-8 w-8 text-neon-blue mb-4" />
-                        <h3 className="text-lg font-bold text-white mb-2 font-mono">Géolocalisation Précise</h3>
-                        <p className="text-sm text-gray-400">Indoor via Tags BLE/NFC et Outdoor via GPS. Fiches itinéraires générées automatiquement.</p>
+                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-glass-gradient p-8 shadow-glass backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-neon-blue/30 hover:shadow-neon">
+                        <LocateFixed className="relative z-10 h-8 w-8 text-neon-blue mb-4" />
+                        <h3 className="relative z-10 text-lg font-bold text-white mb-2 font-mono">Géolocalisation Précise</h3>
+                        <p className="relative z-10 text-sm text-gray-400">Indoor via Tags BLE/NFC et Outdoor via GPS. Fiches itinéraires générées automatiquement.</p>
                     </div>
-                    <div className="border border-white/5 bg-white/5 p-6 backdrop-blur-sm transition-colors hover:border-matrix-green/50">
-                        <Activity className="h-8 w-8 text-matrix-green mb-4" />
-                        <h3 className="text-lg font-bold text-white mb-2 font-mono">PTI Evolué</h3>
-                        <p className="text-sm text-gray-400">Perte de verticalité, immobilité prolongée, appels volontaires (SOS) sur terminaux durcis et Atex.</p>
+                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-glass-gradient p-8 shadow-glass backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-matrix-green/30 hover:shadow-matrix">
+                        <Activity className="relative z-10 h-8 w-8 text-matrix-green mb-4" />
+                        <h3 className="relative z-10 text-lg font-bold text-white mb-2 font-mono">PTI Evolué</h3>
+                        <p className="relative z-10 text-sm text-gray-400">Perte de verticalité, immobilité prolongée, appels volontaires (SOS) sur terminaux durcis et Atex.</p>
                     </div>
-                    <div className="border border-white/5 bg-white/5 p-6 backdrop-blur-sm transition-colors hover:border-neon-blue/50">
-                        <ShieldCheck className="h-8 w-8 text-neon-blue mb-4" />
-                        <h3 className="text-lg font-bold text-white mb-2 font-mono">Supervision Médicale</h3>
-                        <p className="text-sm text-gray-400">Interface native Fresenius. Traçabilité complète des événements 24/24 pour une réactivité maximale.</p>
+                    <div className="relative overflow-hidden rounded-xl border border-white/10 bg-glass-gradient p-8 shadow-glass backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-neon-blue/30 hover:shadow-neon">
+                        <ShieldCheck className="relative z-10 h-8 w-8 text-neon-blue mb-4" />
+                        <h3 className="relative z-10 text-lg font-bold text-white mb-2 font-mono">Supervision Médicale</h3>
+                        <p className="relative z-10 text-sm text-gray-400">Interface native Fresenius. Traçabilité complète des événements 24/24 pour une réactivité maximale.</p>
                     </div>
                 </FadeIn>
             </div>

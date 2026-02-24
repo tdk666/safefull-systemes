@@ -99,11 +99,14 @@ export function LeadForm() {
                         id="company_name"
                         type="text"
                         {...register('company_name')}
-                        className="block w-full rounded-none border border-gray-800 bg-deep-dark px-4 py-3 text-white placeholder-gray-500 transition-colors focus:border-neon-blue focus:outline-none focus:ring-1 focus:ring-neon-blue"
+                        aria-invalid={errors.company_name ? "true" : "false"}
+                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-neon-blue focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-neon-blue/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
                         placeholder="Nom de votre structure"
                     />
                     {errors.company_name && (
-                        <p className="text-xs text-red-400">{errors.company_name.message}</p>
+                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                            <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.company_name.message}
+                        </p>
                     )}
                 </div>
 
@@ -115,11 +118,14 @@ export function LeadForm() {
                         id="contact_name"
                         type="text"
                         {...register('contact_name')}
-                        className="block w-full rounded-none border border-gray-800 bg-deep-dark px-4 py-3 text-white placeholder-gray-500 transition-colors focus:border-neon-blue focus:outline-none focus:ring-1 focus:ring-neon-blue"
+                        aria-invalid={errors.contact_name ? "true" : "false"}
+                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-neon-blue focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-neon-blue/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
                         placeholder="Votre nom complet"
                     />
                     {errors.contact_name && (
-                        <p className="text-xs text-red-400">{errors.contact_name.message}</p>
+                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                            <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.contact_name.message}
+                        </p>
                     )}
                 </div>
             </div>
@@ -133,11 +139,14 @@ export function LeadForm() {
                         id="email"
                         type="email"
                         {...register('email')}
-                        className="block w-full rounded-none border border-gray-800 bg-deep-dark px-4 py-3 text-white placeholder-gray-500 transition-colors focus:border-neon-blue focus:outline-none focus:ring-1 focus:ring-neon-blue"
+                        aria-invalid={errors.email ? "true" : "false"}
+                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-neon-blue focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-neon-blue/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
                         placeholder="vous@entreprise.com"
                     />
                     {errors.email && (
-                        <p className="text-xs text-red-400">{errors.email.message}</p>
+                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                            <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.email.message}
+                        </p>
                     )}
                 </div>
 
@@ -148,7 +157,8 @@ export function LeadForm() {
                     <select
                         id="industry"
                         {...register('industry')}
-                        className="block w-full rounded-none border border-gray-800 bg-deep-dark px-4 py-3 text-white placeholder-gray-500 transition-colors focus:border-neon-blue focus:outline-none focus:ring-1 focus:ring-neon-blue"
+                        aria-invalid={errors.industry ? "true" : "false"}
+                        className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-neon-blue focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-neon-blue/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
                     >
                         <option value="">Sélectionnez un secteur...</option>
                         {industryEnum.map((industry) => (
@@ -158,7 +168,9 @@ export function LeadForm() {
                         ))}
                     </select>
                     {errors.industry && (
-                        <p className="text-xs text-red-400">{errors.industry.message}</p>
+                        <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                            <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.industry.message}
+                        </p>
                     )}
                 </div>
             </div>
@@ -171,22 +183,26 @@ export function LeadForm() {
                     id="message"
                     rows={4}
                     {...register('message')}
-                    className="block w-full rounded-none border border-gray-800 bg-deep-dark px-4 py-3 text-white placeholder-gray-500 transition-colors focus:border-neon-blue focus:outline-none focus:ring-1 focus:ring-neon-blue"
+                    aria-invalid={errors.message ? "true" : "false"}
+                    className="block w-full rounded-sm border border-white/10 bg-dark-surface px-4 py-3 text-white placeholder-gray-500 shadow-inner transition-all duration-200 focus:border-neon-blue focus:bg-deep-dark focus:outline-none focus:ring-2 focus:ring-neon-blue/50 aria-[invalid=true]:border-amber-500 aria-[invalid=true]:focus:ring-amber-500/50"
                     placeholder="Décrivez brièvement le contexte de votre demande (PTI, alarmes hospitalières, etc.)."
                 />
                 {errors.message && (
-                    <p className="text-xs text-red-400">{errors.message.message}</p>
+                    <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                        <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.message.message}
+                    </p>
                 )}
             </div>
 
             <div className="space-y-4">
-                <div className="flex items-start rounded-none border border-white/5 bg-deep-dark p-4">
+                <div className="flex items-start rounded-sm border border-white/5 bg-deep-dark p-4 transition-colors focus-within:border-neon-blue/30">
                     <div className="flex h-5 items-center">
                         <input
                             id="rgpd_consent"
                             type="checkbox"
                             {...register('rgpd_consent')}
-                            className="h-4 w-4 rounded-none border-gray-800 bg-deep-dark text-neon-blue focus:ring-neon-blue focus:ring-offset-gray-900"
+                            aria-invalid={errors.rgpd_consent ? "true" : "false"}
+                            className="h-4 w-4 rounded-sm border-gray-800 bg-dark-surface text-neon-blue transition-colors focus:ring-2 focus:ring-neon-blue focus:ring-offset-2 focus:ring-offset-deep-dark aria-[invalid=true]:border-amber-500"
                         />
                     </div>
                     <div className="ml-3 text-sm">
@@ -194,7 +210,9 @@ export function LeadForm() {
                             J'ai lu et j'accepte la <a href="/politique-confidentialite" target="_blank" rel="noopener noreferrer" className="text-neon-blue hover:underline">Politique de Confidentialité</a>.
                         </label>
                         {errors.rgpd_consent && (
-                            <p className="mt-1 text-xs text-red-400">{errors.rgpd_consent.message}</p>
+                            <p className="mt-1.5 text-xs font-medium text-amber-400 flex items-center gap-1" role="alert">
+                                <span className="h-1 w-1 rounded-full bg-amber-400"></span> {errors.rgpd_consent.message}
+                            </p>
                         )}
                     </div>
                 </div>
@@ -202,12 +220,16 @@ export function LeadForm() {
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="group relative flex w-full items-center justify-center border border-neon-blue bg-neon-blue px-8 py-4 text-base font-bold text-deep-dark transition-all hover:bg-neon-blue/90 disabled:opacity-70 disabled:cursor-not-allowed"
+                    aria-busy={isSubmitting}
+                    className="group relative flex w-full items-center justify-center rounded-sm bg-neon-blue px-8 py-4 text-base font-bold tracking-wide text-deep-dark transition-all duration-300 hover:bg-white hover:shadow-neon focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-deep-dark disabled:pointer-events-none disabled:bg-white/10 disabled:text-white/30"
                 >
                     {isSubmitting ? (
-                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                        <>
+                            <Loader2 className="mr-2 h-5 w-5 animate-spin text-white/50" />
+                            <span className="text-white/50">Chiffrement en cours...</span>
+                        </>
                     ) : (
-                        'Demander un rappel expert'
+                        'Demander un audit de sécurité'
                     )}
                 </button>
                 <div className="mt-6 flex items-start gap-3 border-t border-white/10 pt-4">

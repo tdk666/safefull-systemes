@@ -17,6 +17,14 @@ export default {
                 sans: ['Outfit', 'Inter', 'sans-serif'],
                 mono: ['Space Mono', 'monospace'],
             },
+            boxShadow: {
+                'neon': '0 0 15px -3px rgba(0, 210, 255, 0.4)',
+                'matrix': '0 0 15px -3px rgba(0, 255, 65, 0.4)',
+                'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+            },
+            backgroundImage: {
+                'glass-gradient': 'linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%)',
+            },
             keyframes: {
                 fadeIn: {
                     '0%': { opacity: '0' },
